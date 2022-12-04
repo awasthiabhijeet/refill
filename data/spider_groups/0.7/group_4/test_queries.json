@@ -1,0 +1,262 @@
+[
+    {
+        "db_id": "world_1",
+        "query": "SELECT CountryCode , max( Percentage ) FROM countrylanguage WHERE LANGUAGE = 'Spanish' GROUP BY CountryCode"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT CountryCode FROM countrylanguage EXCEPT SELECT CountryCode FROM countrylanguage WHERE LANGUAGE = 'English'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT count( DISTINCT GovernmentForm ) FROM country WHERE Continent = 'Africa'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Name FROM country WHERE Continent = 'Africa' AND population < ( SELECT min( population ) FROM country WHERE Continent = 'Asia' )"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.GovernmentForm = 'Republic' GROUP BY T2.Language HAVING COUNT( * ) = 1"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.HeadOfState = 'Beatrix' AND T2.IsOfficial = 'T'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT sum( Population ) , avg( LifeExpectancy ) , Continent FROM country GROUP BY Continent HAVING avg( LifeExpectancy ) < 72"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT avg( GNP ) , sum( population ) FROM country WHERE GovernmentForm = 'US Territory'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT * FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' AND IsOfficial = 'T' UNION SELECT * FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'Dutch' AND IsOfficial = 'T'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "select sum( population ) , avg( surfacearea ) from country where continent = 'north america' and surfacearea > 3000"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Name , Population , LifeExpectancy FROM country WHERE Continent = 'Asia' ORDER BY SurfaceArea DESC LIMIT 1"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Name FROM country ORDER BY Population ASC LIMIT 3"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT avg( LifeExpectancy ) FROM country WHERE Name NOT IN ( SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' AND T2.IsOfficial = 'T' )"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Name FROM country WHERE IndepYear > 1950"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Population , LifeExpectancy FROM country WHERE Name = 'Brazil'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT DISTINCT T2.Name FROM country AS T1 JOIN city AS T2 ON T2.CountryCode = T1.Code WHERE T1.Continent = 'Europe' AND T1.Name NOT IN ( SELECT T3.Name FROM country AS T3 JOIN countrylanguage AS T4 ON T3.Code = T4.CountryCode WHERE T4.IsOfficial = 'T' AND T4.Language = 'English' )"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Name FROM country WHERE Continent = 'Asia' AND population > ( SELECT min( population ) FROM country WHERE Continent = 'Africa' )"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Name FROM country ORDER BY Population DESC LIMIT 3"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT COUNT( DISTINCT Continent ) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'Chinese'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT T1.Continent FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode GROUP BY T1.Continent ORDER BY COUNT( * ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Continent = 'Asia' GROUP BY T2.Language ORDER BY COUNT( * ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' INTERSECT SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'French'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT DISTINCT T3.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode JOIN city AS T3 ON T1.Code = T3.CountryCode WHERE T2.IsOfficial = 'T' AND T2.Language = 'Chinese' AND T1.Continent = 'Asia'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Name , SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 5"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Code FROM country WHERE GovernmentForm != 'Republic' EXCEPT SELECT CountryCode FROM countrylanguage WHERE LANGUAGE = 'English'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Name FROM country WHERE SurfaceArea > ( SELECT min( SurfaceArea ) FROM country WHERE Continent = 'Europe' )"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT sum( Population ) FROM city WHERE District = 'Gelderland'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Name , SurfaceArea , IndepYear FROM country ORDER BY Population LIMIT 1"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Name , population , HeadOfState FROM country ORDER BY SurfaceArea DESC LIMIT 1"
+    },
+    {
+        "db_id": "world_1",
+        "query": "select T1.name from country as T1 join countrylanguage as T2 on T1.code = T2.countrycode where T2.language = 'english' and isofficial = 't' union select T1.name from country as T1 join countrylanguage as T2 on T1.code = T2.countrycode where T2.language = 'dutch' and isofficial = 't'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT sum( SurfaceArea ) FROM country WHERE Continent = 'Asia' OR Continent = 'Europe'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT DISTINCT CountryCode FROM countrylanguage WHERE LANGUAGE != 'English'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Region FROM country AS T1 JOIN city AS T2 ON T1.Code = T2.CountryCode WHERE T2.Name = 'Kabul'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT sum( Population ) FROM country WHERE Name NOT IN ( SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' )"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT avg( LifeExpectancy ) FROM country WHERE Continent = 'Africa' AND GovernmentForm = 'Republic'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode GROUP BY T1.Name ORDER BY COUNT( * ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Continent FROM country WHERE Name = 'Anguilla'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT count( DISTINCT LANGUAGE ) FROM countrylanguage"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT T1.Name , T1.Population FROM city AS T1 JOIN countrylanguage AS T2 ON T1.CountryCode = T2.CountryCode WHERE T2.Language = 'English' ORDER BY T1.Population DESC LIMIT 1"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Population , Region FROM country WHERE Name = 'Angola'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT count( * ) FROM country WHERE continent = 'Asia'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT avg( LifeExpectancy ) FROM country WHERE Region = 'Central Africa'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT count( DISTINCT T2.Language ) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE IndepYear < 1930 AND T2.IsOfficial = 'T'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT DISTINCT T1.Region FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' OR T2.Language = 'Dutch'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Name FROM country WHERE continent = 'Europe' AND Population = '80000'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT COUNT( * ) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'Afghanistan' AND IsOfficial = 'T'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Name FROM country WHERE Continent = 'Africa' AND population < ( SELECT max( population ) FROM country WHERE Continent = 'Asia' )"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT LANGUAGE , CountryCode , max( Percentage ) FROM countrylanguage GROUP BY CountryCode"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT sum( Population ) , max( GNP ) FROM country WHERE Continent = 'Asia'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT LANGUAGE FROM countrylanguage GROUP BY LANGUAGE ORDER BY count( * ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT sum( Population ) , GovernmentForm FROM country GROUP BY GovernmentForm HAVING avg( LifeExpectancy ) > 72"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT sum( SurfaceArea ) FROM country WHERE Region = 'Caribbean'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Name FROM country WHERE Continent = 'Asia' AND population > ( SELECT max( population ) FROM country WHERE Continent = 'Africa' )"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT COUNT( T2.Language ) , T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode GROUP BY T1.Name HAVING COUNT( * ) > 2"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT name FROM city WHERE Population BETWEEN 160000 AND 900000"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'Aruba' ORDER BY Percentage DESC LIMIT 1"
+    },
+    {
+        "db_id": "world_1",
+        "query": "select distinct T3.name from country as T1 join countrylanguage as T2 on T1.code = T2.countrycode join city as T3 on T1.code = T3.countrycode where T2.isofficial = 't' and T2.language = 'chinese' and T1.continent = 'asia'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' AND T2.IsOfficial = 'T' INTERSECT SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'French' AND T2.IsOfficial = 'T'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT count( * ) , District FROM city WHERE Population > ( SELECT avg( Population ) FROM city ) GROUP BY District"
+    },
+    {
+        "db_id": "world_1",
+        "query": "select name from city where population between 160000 and 900000"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT COUNT( * ) FROM ( SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'English' INTERSECT SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T2.Language = 'Dutch' )"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT count( * ) , max( Percentage ) FROM countrylanguage WHERE LANGUAGE = 'Spanish' GROUP BY CountryCode"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Name FROM country WHERE Continent = 'Asia' ORDER BY LifeExpectancy LIMIT 1"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT COUNT( T2.Language ) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code = T2.CountryCode WHERE T1.Name = 'Aruba'"
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT count( * ) FROM country WHERE GovernmentForm = 'Republic'"
+    }
+]

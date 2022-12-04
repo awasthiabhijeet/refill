@@ -1,0 +1,134 @@
+[
+    {
+        "db_id": "pets_1",
+        "query": "select avg( age ) from student where stuid not in ( select stuid from has_pet )"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT T1.breed_name FROM Breeds AS T1 JOIN Dogs AS T2 ON T1.breed_code = T2.breed_code GROUP BY T1.breed_name ORDER BY count( * ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT professional_id , role_code , email_address FROM Professionals EXCEPT SELECT T1.professional_id , T1.role_code , T1.email_address FROM Professionals AS T1 JOIN Treatments AS T2 ON T1.professional_id = T2.professional_id"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT T1.name , T2.date_of_treatment FROM Dogs AS T1 JOIN Treatments AS T2 ON T1.dog_id = T2.dog_id WHERE T1.breed_code = ( SELECT breed_code FROM Dogs GROUP BY breed_code ORDER BY count( * ) ASC LIMIT 1 )"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "select name from dogs where dog_id not in ( select dog_id from treatments group by dog_id having sum( cost_of_treatment ) > 1000 )"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT DISTINCT T1.first_name , T3.treatment_type_description FROM professionals AS T1 JOIN Treatments AS T2 ON T1.professional_id = T2.professional_id JOIN Treatment_types AS T3 ON T2.treatment_type_code = T3.treatment_type_code"
+    },
+    {
+        "db_id": "pets_1",
+        "query": "SELECT petid , weight FROM pets WHERE pet_age > 1"
+    },
+    {
+        "db_id": "pets_1",
+        "query": "SELECT avg( weight ) , pettype FROM pets GROUP BY pettype"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT name , age , weight FROM Dogs WHERE abandoned_yn = 1"
+    },
+    {
+        "db_id": "pets_1",
+        "query": "SELECT T2.petid FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid = T2.stuid WHERE T1.Lname = 'Smith'"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT T1.treatment_type_description FROM Treatment_types AS T1 JOIN Treatments AS T2 ON T1.treatment_type_code = T2.treatment_type_code GROUP BY T1.treatment_type_code ORDER BY sum( cost_of_treatment ) ASC LIMIT 1"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT professional_id , last_name , cell_number FROM Professionals WHERE state = 'Indiana' UNION SELECT T1.professional_id , T1.last_name , T1.cell_number FROM Professionals AS T1 JOIN Treatments AS T2 ON T1.professional_id = T2.professional_id GROUP BY T1.professional_id HAVING count( * ) > 2"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT max( charge_amount ) FROM Charges"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT T1.owner_id , T1.zip_code FROM Owners AS T1 JOIN Dogs AS T2 ON T1.owner_id = T2.owner_id JOIN Treatments AS T3 ON T2.dog_id = T3.dog_id GROUP BY T1.owner_id ORDER BY sum( T3.cost_of_treatment ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT T1.last_name FROM Owners AS T1 JOIN Dogs AS T2 ON T1.owner_id = T2.owner_id WHERE T2.age = ( SELECT max( age ) FROM Dogs )"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT count( * ) FROM Dogs WHERE dog_id NOT IN ( SELECT dog_id FROM Treatments )"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT max( age ) FROM Dogs"
+    },
+    {
+        "db_id": "pets_1",
+        "query": "SELECT major , age FROM student WHERE stuid NOT IN ( SELECT T1.stuid FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid = T2.stuid JOIN pets AS T3 ON T3.petid = T2.petid WHERE T3.pettype = 'cat' )"
+    },
+    {
+        "db_id": "pets_1",
+        "query": "SELECT T1.Fname FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid = T2.stuid JOIN pets AS T3 ON T3.petid = T2.petid WHERE T3.pettype = 'cat' INTERSECT SELECT T1.Fname FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid = T2.stuid JOIN pets AS T3 ON T3.petid = T2.petid WHERE T3.pettype = 'dog'"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT count( DISTINCT professional_id ) FROM Treatments"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT DISTINCT T1.date_arrived , T1.date_departed FROM Dogs AS T1 JOIN Treatments AS T2 ON T1.dog_id = T2.dog_id"
+    },
+    {
+        "db_id": "pets_1",
+        "query": "SELECT count( DISTINCT pettype ) FROM pets"
+    },
+    {
+        "db_id": "pets_1",
+        "query": "SELECT count( * ) FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid = T2.stuid JOIN pets AS T3 ON T2.petid = T3.petid WHERE T1.sex = 'F' AND T3.pettype = 'dog'"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT T1.professional_id , T1.role_code , T1.first_name FROM Professionals AS T1 JOIN Treatments AS T2 ON T1.professional_id = T2.professional_id GROUP BY T1.professional_id HAVING count( * ) >= 2"
+    },
+    {
+        "db_id": "pets_1",
+        "query": "SELECT DISTINCT T1.fname , T1.age FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid = T2.stuid"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT T1.first_name , T2.name FROM Owners AS T1 JOIN Dogs AS T2 ON T1.owner_id = T2.owner_id WHERE T1.state = 'Virginia'"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT T1.first_name , T1.last_name , T2.size_code FROM Owners AS T1 JOIN Dogs AS T2 ON T1.owner_id = T2.owner_id"
+    },
+    {
+        "db_id": "pets_1",
+        "query": "SELECT max( weight ) , petType FROM pets GROUP BY petType"
+    },
+    {
+        "db_id": "pets_1",
+        "query": "SELECT T1.fname , T1.age FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid = T2.stuid JOIN pets AS T3 ON T3.petid = T2.petid WHERE T3.pettype = 'dog' AND T1.stuid NOT IN ( SELECT T1.stuid FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid = T2.stuid JOIN pets AS T3 ON T3.petid = T2.petid WHERE T3.pettype = 'cat' )"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT cost_of_treatment FROM Treatments ORDER BY date_of_treatment DESC LIMIT 1"
+    },
+    {
+        "db_id": "pets_1",
+        "query": "SELECT pettype , weight FROM pets ORDER BY pet_age LIMIT 1"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT state FROM Owners INTERSECT SELECT state FROM Professionals"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT T1.date_of_treatment , T2.first_name FROM Treatments AS T1 JOIN Professionals AS T2 ON T1.professional_id = T2.professional_id"
+    }
+]

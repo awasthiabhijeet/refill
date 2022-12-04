@@ -1,0 +1,78 @@
+[
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT name FROM stadium EXCEPT SELECT T2.name FROM concert AS T1 JOIN stadium AS T2 ON T1.stadium_id = T2.stadium_id WHERE T1.year = 2014"
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "select max( capacity ) , average from stadium"
+    },
+    {
+        "db_id": "singer",
+        "query": "select citizenship from singer group by citizenship order by count( * ) desc limit 1"
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT T2.name , T2.capacity FROM concert AS T1 JOIN stadium AS T2 ON T1.stadium_id = T2.stadium_id WHERE T1.year >= 2014 GROUP BY T2.stadium_id ORDER BY count( * ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "orchestra",
+        "query": "SELECT T1.Name FROM conductor AS T1 JOIN orchestra AS T2 ON T1.Conductor_ID = T2.Conductor_ID GROUP BY T2.Conductor_ID ORDER BY COUNT( * ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT T2.name FROM singer_in_concert AS T1 JOIN singer AS T2 ON T1.singer_id = T2.singer_id JOIN concert AS T3 ON T1.concert_id = T3.concert_id WHERE T3.year = 2014"
+    },
+    {
+        "db_id": "orchestra",
+        "query": "SELECT avg( Attendance ) FROM SHOW"
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT T2.concert_name , T2.theme , count( * ) FROM singer_in_concert AS T1 JOIN concert AS T2 ON T1.concert_id = T2.concert_id GROUP BY T2.concert_id"
+    },
+    {
+        "db_id": "singer",
+        "query": "SELECT Name FROM singer ORDER BY Net_Worth_Millions DESC LIMIT 1"
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "select count( * ) from concert where stadium_id = ( select stadium_id from stadium order by capacity desc limit 1 )"
+    },
+    {
+        "db_id": "orchestra",
+        "query": "SELECT max( SHARE ) , min( SHARE ) FROM performance WHERE TYPE != 'Live final'"
+    },
+    {
+        "db_id": "orchestra",
+        "query": "SELECT count( DISTINCT Nationality ) FROM conductor"
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT name FROM stadium WHERE stadium_id NOT IN ( SELECT stadium_id FROM concert )"
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT avg( age ) , min( age ) , max( age ) FROM singer WHERE country = 'France'"
+    },
+    {
+        "db_id": "orchestra",
+        "query": "SELECT count( * ) FROM conductor"
+    },
+    {
+        "db_id": "singer",
+        "query": "SELECT DISTINCT T1.Name FROM singer AS T1 JOIN song AS T2 ON T1.Singer_ID = T2.Singer_ID WHERE T2.Sales > 300000"
+    },
+    {
+        "db_id": "singer",
+        "query": "SELECT Name FROM singer WHERE Citizenship != 'France'"
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT T2.name , T2.location FROM concert AS T1 JOIN stadium AS T2 ON T1.stadium_id = T2.stadium_id WHERE T1.Year = 2014 INTERSECT SELECT T2.name , T2.location FROM concert AS T1 JOIN stadium AS T2 ON T1.stadium_id = T2.stadium_id WHERE T1.Year = 2015"
+    },
+    {
+        "db_id": "singer",
+        "query": "SELECT Citizenship , max( Net_Worth_Millions ) FROM singer GROUP BY Citizenship"
+    }
+]

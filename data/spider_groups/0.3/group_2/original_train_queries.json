@@ -1,0 +1,78 @@
+[
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT count( DISTINCT dog_id ) FROM Treatments"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT count( * ) FROM Dogs WHERE dog_id NOT IN ( SELECT dog_id FROM Treatments )"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT T1.owner_id , T2.first_name , T2.last_name FROM Dogs AS T1 JOIN Owners AS T2 ON T1.owner_id = T2.owner_id GROUP BY T1.owner_id ORDER BY count( * ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT T1.owner_id , T1.last_name FROM Owners AS T1 JOIN Dogs AS T2 ON T1.owner_id = T2.owner_id JOIN Treatments AS T3 ON T2.dog_id = T3.dog_id GROUP BY T1.owner_id ORDER BY count( * ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT date_arrived , date_departed FROM Dogs"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT professional_id , role_code , email_address FROM Professionals EXCEPT SELECT T1.professional_id , T1.role_code , T1.email_address FROM Professionals AS T1 JOIN Treatments AS T2 ON T1.professional_id = T2.professional_id"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT T1.professional_id , T1.cell_number FROM Professionals AS T1 JOIN Treatments AS T2 ON T1.professional_id = T2.professional_id GROUP BY T1.professional_id HAVING count( * ) >= 2"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT T1.name , T2.date_of_treatment FROM Dogs AS T1 JOIN Treatments AS T2 ON T1.dog_id = T2.dog_id WHERE T1.breed_code = ( SELECT breed_code FROM Dogs GROUP BY breed_code ORDER BY count( * ) ASC LIMIT 1 )"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT max( age ) FROM Dogs"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT role_code , street , city , state FROM professionals WHERE city LIKE '%West%'"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT T1.date_of_treatment , T2.first_name FROM Treatments AS T1 JOIN Professionals AS T2 ON T1.professional_id = T2.professional_id"
+    },
+    {
+        "db_id": "pets_1",
+        "query": "SELECT weight FROM pets ORDER BY pet_age LIMIT 1"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT email_address FROM Professionals WHERE state = 'Hawaii' OR state = 'Wisconsin'"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT state FROM Owners INTERSECT SELECT state FROM Professionals"
+    },
+    {
+        "db_id": "pets_1",
+        "query": "SELECT count( * ) FROM pets WHERE weight > 10"
+    },
+    {
+        "db_id": "pets_1",
+        "query": "select T1.fname from student as T1 join has_pet as T2 on T1.stuid = T2.stuid join pets as T3 on T3.petid = T2.petid where T3.pettype = 'cat' intersect select T1.fname from student as T1 join has_pet as T2 on T1.stuid = T2.stuid join pets as T3 on T3.petid = T2.petid where T3.pettype = 'dog'"
+    },
+    {
+        "db_id": "pets_1",
+        "query": "SELECT DISTINCT T1.Fname FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid = T2.stuid JOIN pets AS T3 ON T3.petid = T2.petid WHERE T3.pettype = 'cat' OR T3.pettype = 'dog'"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT T1.breed_name FROM Breeds AS T1 JOIN Dogs AS T2 ON T1.breed_code = T2.breed_code GROUP BY T1.breed_name ORDER BY count( * ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "dog_kennels",
+        "query": "SELECT first_name FROM Professionals UNION SELECT first_name FROM Owners EXCEPT SELECT name FROM Dogs"
+    }
+]

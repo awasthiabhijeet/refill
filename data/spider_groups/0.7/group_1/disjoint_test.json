@@ -1,0 +1,4744 @@
+[
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT avg(age) ,  min(age) ,  max(age) FROM singer WHERE country  =  'France'",
+        "query_toks": [
+            "SELECT",
+            "avg",
+            "(",
+            "age",
+            ")",
+            ",",
+            "min",
+            "(",
+            "age",
+            ")",
+            ",",
+            "max",
+            "(",
+            "age",
+            ")",
+            "FROM",
+            "singer",
+            "WHERE",
+            "country",
+            "=",
+            "'France",
+            "'"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "avg",
+            "(",
+            "age",
+            ")",
+            ",",
+            "min",
+            "(",
+            "age",
+            ")",
+            ",",
+            "max",
+            "(",
+            "age",
+            ")",
+            "from",
+            "singer",
+            "where",
+            "country",
+            "=",
+            "value"
+        ],
+        "question": "What is the average, minimum, and maximum age of all singers from France?",
+        "question_toks": [
+            "What",
+            "is",
+            "the",
+            "average",
+            ",",
+            "minimum",
+            ",",
+            "and",
+            "maximum",
+            "age",
+            "of",
+            "all",
+            "singers",
+            "from",
+            "France",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        1
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        5,
+                        [
+                            0,
+                            [
+                                0,
+                                13,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                13,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        1,
+                        [
+                            0,
+                            [
+                                0,
+                                13,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            10,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"France\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT avg(age) ,  min(age) ,  max(age) FROM singer WHERE country  =  'France'",
+        "query_toks": [
+            "SELECT",
+            "avg",
+            "(",
+            "age",
+            ")",
+            ",",
+            "min",
+            "(",
+            "age",
+            ")",
+            ",",
+            "max",
+            "(",
+            "age",
+            ")",
+            "FROM",
+            "singer",
+            "WHERE",
+            "country",
+            "=",
+            "'France",
+            "'"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "avg",
+            "(",
+            "age",
+            ")",
+            ",",
+            "min",
+            "(",
+            "age",
+            ")",
+            ",",
+            "max",
+            "(",
+            "age",
+            ")",
+            "from",
+            "singer",
+            "where",
+            "country",
+            "=",
+            "value"
+        ],
+        "question": "What is the average, minimum, and maximum age for all French singers?",
+        "question_toks": [
+            "What",
+            "is",
+            "the",
+            "average",
+            ",",
+            "minimum",
+            ",",
+            "and",
+            "maximum",
+            "age",
+            "for",
+            "all",
+            "French",
+            "singers",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        1
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        5,
+                        [
+                            0,
+                            [
+                                0,
+                                13,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                13,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        1,
+                        [
+                            0,
+                            [
+                                0,
+                                13,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            10,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"France\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "select max(capacity), average from stadium",
+        "query_toks": [
+            "select",
+            "max",
+            "(",
+            "capacity",
+            ")",
+            ",",
+            "average",
+            "from",
+            "stadium"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "max",
+            "(",
+            "capacity",
+            ")",
+            ",",
+            "average",
+            "from",
+            "stadium"
+        ],
+        "question": "What is the maximum capacity and the average of all stadiums ?",
+        "question_toks": [
+            "What",
+            "is",
+            "the",
+            "maximum",
+            "capacity",
+            "and",
+            "the",
+            "average",
+            "of",
+            "all",
+            "stadiums",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        1,
+                        [
+                            0,
+                            [
+                                0,
+                                4,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                7,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT T2.name ,  T2.capacity FROM concert AS T1 JOIN stadium AS T2 ON T1.stadium_id  =  T2.stadium_id WHERE T1.year  >=  2014 GROUP BY T2.stadium_id ORDER BY count(*) DESC LIMIT 1",
+        "query_toks": [
+            "SELECT",
+            "T2.name",
+            ",",
+            "T2.capacity",
+            "FROM",
+            "concert",
+            "AS",
+            "T1",
+            "JOIN",
+            "stadium",
+            "AS",
+            "T2",
+            "ON",
+            "T1.stadium_id",
+            "=",
+            "T2.stadium_id",
+            "WHERE",
+            "T1.year",
+            ">",
+            "=",
+            "2014",
+            "GROUP",
+            "BY",
+            "T2.stadium_id",
+            "ORDER",
+            "BY",
+            "count",
+            "(",
+            "*",
+            ")",
+            "DESC",
+            "LIMIT",
+            "1"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "t2",
+            ".",
+            "name",
+            ",",
+            "t2",
+            ".",
+            "capacity",
+            "from",
+            "concert",
+            "as",
+            "t1",
+            "join",
+            "stadium",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "stadium_id",
+            "=",
+            "t2",
+            ".",
+            "stadium_id",
+            "where",
+            "t1",
+            ".",
+            "year",
+            ">",
+            "=",
+            "value",
+            "group",
+            "by",
+            "t2",
+            ".",
+            "stadium_id",
+            "order",
+            "by",
+            "count",
+            "(",
+            "*",
+            ")",
+            "desc",
+            "limit",
+            "value"
+        ],
+        "question": "Show the stadium name and capacity with most number of concerts in year 2014 or after.",
+        "question_toks": [
+            "Show",
+            "the",
+            "stadium",
+            "name",
+            "and",
+            "capacity",
+            "with",
+            "most",
+            "number",
+            "of",
+            "concerts",
+            "in",
+            "year",
+            "2014",
+            "or",
+            "after",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ],
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                18,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            1,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                3,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                4,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    5,
+                    [
+                        0,
+                        [
+                            0,
+                            19,
+                            false
+                        ],
+                        null
+                    ],
+                    2014.0,
+                    null
+                ]
+            ],
+            "groupBy": [
+                [
+                    0,
+                    1,
+                    false
+                ]
+            ],
+            "having": [],
+            "orderBy": [
+                "desc",
+                [
+                    [
+                        0,
+                        [
+                            3,
+                            0,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            ],
+            "limit": 1,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT name FROM stadium WHERE stadium_id NOT IN (SELECT stadium_id FROM concert)",
+        "query_toks": [
+            "SELECT",
+            "name",
+            "FROM",
+            "stadium",
+            "WHERE",
+            "stadium_id",
+            "NOT",
+            "IN",
+            "(",
+            "SELECT",
+            "stadium_id",
+            "FROM",
+            "concert",
+            ")"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "name",
+            "from",
+            "stadium",
+            "where",
+            "stadium_id",
+            "not",
+            "in",
+            "(",
+            "select",
+            "stadium_id",
+            "from",
+            "concert",
+            ")"
+        ],
+        "question": "Show the stadium names without any concert.",
+        "question_toks": [
+            "Show",
+            "the",
+            "stadium",
+            "names",
+            "without",
+            "any",
+            "concert",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                3,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    true,
+                    8,
+                    [
+                        0,
+                        [
+                            0,
+                            1,
+                            false
+                        ],
+                        null
+                    ],
+                    {
+                        "from": {
+                            "table_units": [
+                                [
+                                    "table_unit",
+                                    2
+                                ]
+                            ],
+                            "conds": []
+                        },
+                        "select": [
+                            false,
+                            [
+                                [
+                                    0,
+                                    [
+                                        0,
+                                        [
+                                            0,
+                                            18,
+                                            false
+                                        ],
+                                        null
+                                    ]
+                                ]
+                            ]
+                        ],
+                        "where": [],
+                        "groupBy": [],
+                        "having": [],
+                        "orderBy": [],
+                        "limit": null,
+                        "intersect": null,
+                        "union": null,
+                        "except": null
+                    },
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT name FROM stadium WHERE stadium_id NOT IN (SELECT stadium_id FROM concert)",
+        "query_toks": [
+            "SELECT",
+            "name",
+            "FROM",
+            "stadium",
+            "WHERE",
+            "stadium_id",
+            "NOT",
+            "IN",
+            "(",
+            "SELECT",
+            "stadium_id",
+            "FROM",
+            "concert",
+            ")"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "name",
+            "from",
+            "stadium",
+            "where",
+            "stadium_id",
+            "not",
+            "in",
+            "(",
+            "select",
+            "stadium_id",
+            "from",
+            "concert",
+            ")"
+        ],
+        "question": "What are the names of the stadiums without any concerts?",
+        "question_toks": [
+            "What",
+            "are",
+            "the",
+            "names",
+            "of",
+            "the",
+            "stadiums",
+            "without",
+            "any",
+            "concerts",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                3,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    true,
+                    8,
+                    [
+                        0,
+                        [
+                            0,
+                            1,
+                            false
+                        ],
+                        null
+                    ],
+                    {
+                        "from": {
+                            "table_units": [
+                                [
+                                    "table_unit",
+                                    2
+                                ]
+                            ],
+                            "conds": []
+                        },
+                        "select": [
+                            false,
+                            [
+                                [
+                                    0,
+                                    [
+                                        0,
+                                        [
+                                            0,
+                                            18,
+                                            false
+                                        ],
+                                        null
+                                    ]
+                                ]
+                            ]
+                        ],
+                        "where": [],
+                        "groupBy": [],
+                        "having": [],
+                        "orderBy": [],
+                        "limit": null,
+                        "intersect": null,
+                        "union": null,
+                        "except": null
+                    },
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT name FROM stadium EXCEPT SELECT T2.name FROM concert AS T1 JOIN stadium AS T2 ON T1.stadium_id  =  T2.stadium_id WHERE T1.year  =  2014",
+        "query_toks": [
+            "SELECT",
+            "name",
+            "FROM",
+            "stadium",
+            "EXCEPT",
+            "SELECT",
+            "T2.name",
+            "FROM",
+            "concert",
+            "AS",
+            "T1",
+            "JOIN",
+            "stadium",
+            "AS",
+            "T2",
+            "ON",
+            "T1.stadium_id",
+            "=",
+            "T2.stadium_id",
+            "WHERE",
+            "T1.year",
+            "=",
+            "2014"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "name",
+            "from",
+            "stadium",
+            "except",
+            "select",
+            "t2",
+            ".",
+            "name",
+            "from",
+            "concert",
+            "as",
+            "t1",
+            "join",
+            "stadium",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "stadium_id",
+            "=",
+            "t2",
+            ".",
+            "stadium_id",
+            "where",
+            "t1",
+            ".",
+            "year",
+            "=",
+            "value"
+        ],
+        "question": "Show names for all stadiums except for stadiums having a concert in year 2014.",
+        "question_toks": [
+            "Show",
+            "names",
+            "for",
+            "all",
+            "stadiums",
+            "except",
+            "for",
+            "stadiums",
+            "having",
+            "a",
+            "concert",
+            "in",
+            "year",
+            "2014",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                3,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": {
+                "from": {
+                    "table_units": [
+                        [
+                            "table_unit",
+                            2
+                        ],
+                        [
+                            "table_unit",
+                            0
+                        ]
+                    ],
+                    "conds": [
+                        [
+                            false,
+                            2,
+                            [
+                                0,
+                                [
+                                    0,
+                                    18,
+                                    false
+                                ],
+                                null
+                            ],
+                            [
+                                0,
+                                1,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                },
+                "select": [
+                    false,
+                    [
+                        [
+                            0,
+                            [
+                                0,
+                                [
+                                    0,
+                                    3,
+                                    false
+                                ],
+                                null
+                            ]
+                        ]
+                    ]
+                ],
+                "where": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                19,
+                                false
+                            ],
+                            null
+                        ],
+                        2014.0,
+                        null
+                    ]
+                ],
+                "groupBy": [],
+                "having": [],
+                "orderBy": [],
+                "limit": null,
+                "intersect": null,
+                "union": null,
+                "except": null
+            }
+        }
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT name FROM stadium EXCEPT SELECT T2.name FROM concert AS T1 JOIN stadium AS T2 ON T1.stadium_id  =  T2.stadium_id WHERE T1.year  =  2014",
+        "query_toks": [
+            "SELECT",
+            "name",
+            "FROM",
+            "stadium",
+            "EXCEPT",
+            "SELECT",
+            "T2.name",
+            "FROM",
+            "concert",
+            "AS",
+            "T1",
+            "JOIN",
+            "stadium",
+            "AS",
+            "T2",
+            "ON",
+            "T1.stadium_id",
+            "=",
+            "T2.stadium_id",
+            "WHERE",
+            "T1.year",
+            "=",
+            "2014"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "name",
+            "from",
+            "stadium",
+            "except",
+            "select",
+            "t2",
+            ".",
+            "name",
+            "from",
+            "concert",
+            "as",
+            "t1",
+            "join",
+            "stadium",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "stadium_id",
+            "=",
+            "t2",
+            ".",
+            "stadium_id",
+            "where",
+            "t1",
+            ".",
+            "year",
+            "=",
+            "value"
+        ],
+        "question": "What are the names of all stadiums that did not have a concert in 2014?",
+        "question_toks": [
+            "What",
+            "are",
+            "the",
+            "names",
+            "of",
+            "all",
+            "stadiums",
+            "that",
+            "did",
+            "not",
+            "have",
+            "a",
+            "concert",
+            "in",
+            "2014",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                3,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": {
+                "from": {
+                    "table_units": [
+                        [
+                            "table_unit",
+                            2
+                        ],
+                        [
+                            "table_unit",
+                            0
+                        ]
+                    ],
+                    "conds": [
+                        [
+                            false,
+                            2,
+                            [
+                                0,
+                                [
+                                    0,
+                                    18,
+                                    false
+                                ],
+                                null
+                            ],
+                            [
+                                0,
+                                1,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                },
+                "select": [
+                    false,
+                    [
+                        [
+                            0,
+                            [
+                                0,
+                                [
+                                    0,
+                                    3,
+                                    false
+                                ],
+                                null
+                            ]
+                        ]
+                    ]
+                ],
+                "where": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                19,
+                                false
+                            ],
+                            null
+                        ],
+                        2014.0,
+                        null
+                    ]
+                ],
+                "groupBy": [],
+                "having": [],
+                "orderBy": [],
+                "limit": null,
+                "intersect": null,
+                "union": null,
+                "except": null
+            }
+        }
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT T2.concert_name ,  T2.theme ,  count(*) FROM singer_in_concert AS T1 JOIN concert AS T2 ON T1.concert_id  =  T2.concert_id GROUP BY T2.concert_id",
+        "query_toks": [
+            "SELECT",
+            "T2.concert_name",
+            ",",
+            "T2.theme",
+            ",",
+            "count",
+            "(",
+            "*",
+            ")",
+            "FROM",
+            "singer_in_concert",
+            "AS",
+            "T1",
+            "JOIN",
+            "concert",
+            "AS",
+            "T2",
+            "ON",
+            "T1.concert_id",
+            "=",
+            "T2.concert_id",
+            "GROUP",
+            "BY",
+            "T2.concert_id"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "t2",
+            ".",
+            "concert_name",
+            ",",
+            "t2",
+            ".",
+            "theme",
+            ",",
+            "count",
+            "(",
+            "*",
+            ")",
+            "from",
+            "singer_in_concert",
+            "as",
+            "t1",
+            "join",
+            "concert",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "concert_id",
+            "=",
+            "t2",
+            ".",
+            "concert_id",
+            "group",
+            "by",
+            "t2",
+            ".",
+            "concert_id"
+        ],
+        "question": "Show the name and theme for all concerts and the number of singers in each concert.",
+        "question_toks": [
+            "Show",
+            "the",
+            "name",
+            "and",
+            "theme",
+            "for",
+            "all",
+            "concerts",
+            "and",
+            "the",
+            "number",
+            "of",
+            "singers",
+            "in",
+            "each",
+            "concert",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        3
+                    ],
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                20,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            15,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                16,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                17,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                0,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [
+                [
+                    0,
+                    15,
+                    false
+                ]
+            ],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT T2.name FROM singer_in_concert AS T1 JOIN singer AS T2 ON T1.singer_id  =  T2.singer_id JOIN concert AS T3 ON T1.concert_id  =  T3.concert_id WHERE T3.year  =  2014",
+        "query_toks": [
+            "SELECT",
+            "T2.name",
+            "FROM",
+            "singer_in_concert",
+            "AS",
+            "T1",
+            "JOIN",
+            "singer",
+            "AS",
+            "T2",
+            "ON",
+            "T1.singer_id",
+            "=",
+            "T2.singer_id",
+            "JOIN",
+            "concert",
+            "AS",
+            "T3",
+            "ON",
+            "T1.concert_id",
+            "=",
+            "T3.concert_id",
+            "WHERE",
+            "T3.year",
+            "=",
+            "2014"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "t2",
+            ".",
+            "name",
+            "from",
+            "singer_in_concert",
+            "as",
+            "t1",
+            "join",
+            "singer",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "singer_id",
+            "=",
+            "t2",
+            ".",
+            "singer_id",
+            "join",
+            "concert",
+            "as",
+            "t3",
+            "on",
+            "t1",
+            ".",
+            "concert_id",
+            "=",
+            "t3",
+            ".",
+            "concert_id",
+            "where",
+            "t3",
+            ".",
+            "year",
+            "=",
+            "value"
+        ],
+        "question": "List all singer names in concerts in year 2014.",
+        "question_toks": [
+            "List",
+            "all",
+            "singer",
+            "names",
+            "in",
+            "concerts",
+            "in",
+            "year",
+            "2014",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        3
+                    ],
+                    [
+                        "table_unit",
+                        1
+                    ],
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                21,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            8,
+                            false
+                        ],
+                        null
+                    ],
+                    "and",
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                20,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            15,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                9,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            19,
+                            false
+                        ],
+                        null
+                    ],
+                    2014.0,
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT T2.name FROM singer_in_concert AS T1 JOIN singer AS T2 ON T1.singer_id  =  T2.singer_id JOIN concert AS T3 ON T1.concert_id  =  T3.concert_id WHERE T3.year  =  2014",
+        "query_toks": [
+            "SELECT",
+            "T2.name",
+            "FROM",
+            "singer_in_concert",
+            "AS",
+            "T1",
+            "JOIN",
+            "singer",
+            "AS",
+            "T2",
+            "ON",
+            "T1.singer_id",
+            "=",
+            "T2.singer_id",
+            "JOIN",
+            "concert",
+            "AS",
+            "T3",
+            "ON",
+            "T1.concert_id",
+            "=",
+            "T3.concert_id",
+            "WHERE",
+            "T3.year",
+            "=",
+            "2014"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "t2",
+            ".",
+            "name",
+            "from",
+            "singer_in_concert",
+            "as",
+            "t1",
+            "join",
+            "singer",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "singer_id",
+            "=",
+            "t2",
+            ".",
+            "singer_id",
+            "join",
+            "concert",
+            "as",
+            "t3",
+            "on",
+            "t1",
+            ".",
+            "concert_id",
+            "=",
+            "t3",
+            ".",
+            "concert_id",
+            "where",
+            "t3",
+            ".",
+            "year",
+            "=",
+            "value"
+        ],
+        "question": "What are the names of the singers who performed in a concert in 2014?",
+        "question_toks": [
+            "What",
+            "are",
+            "the",
+            "names",
+            "of",
+            "the",
+            "singers",
+            "who",
+            "performed",
+            "in",
+            "a",
+            "concert",
+            "in",
+            "2014",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        3
+                    ],
+                    [
+                        "table_unit",
+                        1
+                    ],
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                21,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            8,
+                            false
+                        ],
+                        null
+                    ],
+                    "and",
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                20,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            15,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                9,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            19,
+                            false
+                        ],
+                        null
+                    ],
+                    2014.0,
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT T2.name ,  T2.location FROM concert AS T1 JOIN stadium AS T2 ON T1.stadium_id  =  T2.stadium_id WHERE T1.Year  =  2014 INTERSECT SELECT T2.name ,  T2.location FROM concert AS T1 JOIN stadium AS T2 ON T1.stadium_id  =  T2.stadium_id WHERE T1.Year  =  2015",
+        "query_toks": [
+            "SELECT",
+            "T2.name",
+            ",",
+            "T2.location",
+            "FROM",
+            "concert",
+            "AS",
+            "T1",
+            "JOIN",
+            "stadium",
+            "AS",
+            "T2",
+            "ON",
+            "T1.stadium_id",
+            "=",
+            "T2.stadium_id",
+            "WHERE",
+            "T1.Year",
+            "=",
+            "2014",
+            "INTERSECT",
+            "SELECT",
+            "T2.name",
+            ",",
+            "T2.location",
+            "FROM",
+            "concert",
+            "AS",
+            "T1",
+            "JOIN",
+            "stadium",
+            "AS",
+            "T2",
+            "ON",
+            "T1.stadium_id",
+            "=",
+            "T2.stadium_id",
+            "WHERE",
+            "T1.Year",
+            "=",
+            "2015"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "t2",
+            ".",
+            "name",
+            ",",
+            "t2",
+            ".",
+            "location",
+            "from",
+            "concert",
+            "as",
+            "t1",
+            "join",
+            "stadium",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "stadium_id",
+            "=",
+            "t2",
+            ".",
+            "stadium_id",
+            "where",
+            "t1",
+            ".",
+            "year",
+            "=",
+            "value",
+            "intersect",
+            "select",
+            "t2",
+            ".",
+            "name",
+            ",",
+            "t2",
+            ".",
+            "location",
+            "from",
+            "concert",
+            "as",
+            "t1",
+            "join",
+            "stadium",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "stadium_id",
+            "=",
+            "t2",
+            ".",
+            "stadium_id",
+            "where",
+            "t1",
+            ".",
+            "year",
+            "=",
+            "value"
+        ],
+        "question": "Find the name and location of the stadiums which some concerts happened in the years of both 2014 and 2015.",
+        "question_toks": [
+            "Find",
+            "the",
+            "name",
+            "and",
+            "location",
+            "of",
+            "the",
+            "stadiums",
+            "which",
+            "some",
+            "concerts",
+            "happened",
+            "in",
+            "the",
+            "years",
+            "of",
+            "both",
+            "2014",
+            "and",
+            "2015",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ],
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                18,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            1,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                3,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                2,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            19,
+                            false
+                        ],
+                        null
+                    ],
+                    2014.0,
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": {
+                "from": {
+                    "table_units": [
+                        [
+                            "table_unit",
+                            2
+                        ],
+                        [
+                            "table_unit",
+                            0
+                        ]
+                    ],
+                    "conds": [
+                        [
+                            false,
+                            2,
+                            [
+                                0,
+                                [
+                                    0,
+                                    18,
+                                    false
+                                ],
+                                null
+                            ],
+                            [
+                                0,
+                                1,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                },
+                "select": [
+                    false,
+                    [
+                        [
+                            0,
+                            [
+                                0,
+                                [
+                                    0,
+                                    3,
+                                    false
+                                ],
+                                null
+                            ]
+                        ],
+                        [
+                            0,
+                            [
+                                0,
+                                [
+                                    0,
+                                    2,
+                                    false
+                                ],
+                                null
+                            ]
+                        ]
+                    ]
+                ],
+                "where": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                19,
+                                false
+                            ],
+                            null
+                        ],
+                        2015.0,
+                        null
+                    ]
+                ],
+                "groupBy": [],
+                "having": [],
+                "orderBy": [],
+                "limit": null,
+                "intersect": null,
+                "union": null,
+                "except": null
+            },
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "SELECT T2.name ,  T2.location FROM concert AS T1 JOIN stadium AS T2 ON T1.stadium_id  =  T2.stadium_id WHERE T1.Year  =  2014 INTERSECT SELECT T2.name ,  T2.location FROM concert AS T1 JOIN stadium AS T2 ON T1.stadium_id  =  T2.stadium_id WHERE T1.Year  =  2015",
+        "query_toks": [
+            "SELECT",
+            "T2.name",
+            ",",
+            "T2.location",
+            "FROM",
+            "concert",
+            "AS",
+            "T1",
+            "JOIN",
+            "stadium",
+            "AS",
+            "T2",
+            "ON",
+            "T1.stadium_id",
+            "=",
+            "T2.stadium_id",
+            "WHERE",
+            "T1.Year",
+            "=",
+            "2014",
+            "INTERSECT",
+            "SELECT",
+            "T2.name",
+            ",",
+            "T2.location",
+            "FROM",
+            "concert",
+            "AS",
+            "T1",
+            "JOIN",
+            "stadium",
+            "AS",
+            "T2",
+            "ON",
+            "T1.stadium_id",
+            "=",
+            "T2.stadium_id",
+            "WHERE",
+            "T1.Year",
+            "=",
+            "2015"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "t2",
+            ".",
+            "name",
+            ",",
+            "t2",
+            ".",
+            "location",
+            "from",
+            "concert",
+            "as",
+            "t1",
+            "join",
+            "stadium",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "stadium_id",
+            "=",
+            "t2",
+            ".",
+            "stadium_id",
+            "where",
+            "t1",
+            ".",
+            "year",
+            "=",
+            "value",
+            "intersect",
+            "select",
+            "t2",
+            ".",
+            "name",
+            ",",
+            "t2",
+            ".",
+            "location",
+            "from",
+            "concert",
+            "as",
+            "t1",
+            "join",
+            "stadium",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "stadium_id",
+            "=",
+            "t2",
+            ".",
+            "stadium_id",
+            "where",
+            "t1",
+            ".",
+            "year",
+            "=",
+            "value"
+        ],
+        "question": "What are the names and locations of the stadiums that had concerts that occurred in both 2014 and 2015?",
+        "question_toks": [
+            "What",
+            "are",
+            "the",
+            "names",
+            "and",
+            "locations",
+            "of",
+            "the",
+            "stadiums",
+            "that",
+            "had",
+            "concerts",
+            "that",
+            "occurred",
+            "in",
+            "both",
+            "2014",
+            "and",
+            "2015",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ],
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                18,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            1,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                3,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                2,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            19,
+                            false
+                        ],
+                        null
+                    ],
+                    2014.0,
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": {
+                "from": {
+                    "table_units": [
+                        [
+                            "table_unit",
+                            2
+                        ],
+                        [
+                            "table_unit",
+                            0
+                        ]
+                    ],
+                    "conds": [
+                        [
+                            false,
+                            2,
+                            [
+                                0,
+                                [
+                                    0,
+                                    18,
+                                    false
+                                ],
+                                null
+                            ],
+                            [
+                                0,
+                                1,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                },
+                "select": [
+                    false,
+                    [
+                        [
+                            0,
+                            [
+                                0,
+                                [
+                                    0,
+                                    3,
+                                    false
+                                ],
+                                null
+                            ]
+                        ],
+                        [
+                            0,
+                            [
+                                0,
+                                [
+                                    0,
+                                    2,
+                                    false
+                                ],
+                                null
+                            ]
+                        ]
+                    ]
+                ],
+                "where": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                19,
+                                false
+                            ],
+                            null
+                        ],
+                        2015.0,
+                        null
+                    ]
+                ],
+                "groupBy": [],
+                "having": [],
+                "orderBy": [],
+                "limit": null,
+                "intersect": null,
+                "union": null,
+                "except": null
+            },
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "select count(*) from concert where stadium_id = (select stadium_id from stadium order by capacity desc limit 1)",
+        "query_toks": [
+            "select",
+            "count",
+            "(",
+            "*",
+            ")",
+            "from",
+            "concert",
+            "where",
+            "stadium_id",
+            "=",
+            "(",
+            "select",
+            "stadium_id",
+            "from",
+            "stadium",
+            "order",
+            "by",
+            "capacity",
+            "desc",
+            "limit",
+            "1",
+            ")"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "*",
+            ")",
+            "from",
+            "concert",
+            "where",
+            "stadium_id",
+            "=",
+            "(",
+            "select",
+            "stadium_id",
+            "from",
+            "stadium",
+            "order",
+            "by",
+            "capacity",
+            "desc",
+            "limit",
+            "value",
+            ")"
+        ],
+        "question": "Find the number of concerts happened in the stadium with the highest capacity .",
+        "question_toks": [
+            "Find",
+            "the",
+            "number",
+            "of",
+            "concerts",
+            "happened",
+            "in",
+            "the",
+            "stadium",
+            "with",
+            "the",
+            "highest",
+            "capacity",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                0,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            18,
+                            false
+                        ],
+                        null
+                    ],
+                    {
+                        "from": {
+                            "table_units": [
+                                [
+                                    "table_unit",
+                                    0
+                                ]
+                            ],
+                            "conds": []
+                        },
+                        "select": [
+                            false,
+                            [
+                                [
+                                    0,
+                                    [
+                                        0,
+                                        [
+                                            0,
+                                            1,
+                                            false
+                                        ],
+                                        null
+                                    ]
+                                ]
+                            ]
+                        ],
+                        "where": [],
+                        "groupBy": [],
+                        "having": [],
+                        "orderBy": [
+                            "desc",
+                            [
+                                [
+                                    0,
+                                    [
+                                        0,
+                                        4,
+                                        false
+                                    ],
+                                    null
+                                ]
+                            ]
+                        ],
+                        "limit": 1,
+                        "intersect": null,
+                        "union": null,
+                        "except": null
+                    },
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "concert_singer",
+        "query": "select count(*) from concert where stadium_id = (select stadium_id from stadium order by capacity desc limit 1)",
+        "query_toks": [
+            "select",
+            "count",
+            "(",
+            "*",
+            ")",
+            "from",
+            "concert",
+            "where",
+            "stadium_id",
+            "=",
+            "(",
+            "select",
+            "stadium_id",
+            "from",
+            "stadium",
+            "order",
+            "by",
+            "capacity",
+            "desc",
+            "limit",
+            "1",
+            ")"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "*",
+            ")",
+            "from",
+            "concert",
+            "where",
+            "stadium_id",
+            "=",
+            "(",
+            "select",
+            "stadium_id",
+            "from",
+            "stadium",
+            "order",
+            "by",
+            "capacity",
+            "desc",
+            "limit",
+            "value",
+            ")"
+        ],
+        "question": "What are the number of concerts that occurred in the stadium with the largest capacity ?",
+        "question_toks": [
+            "What",
+            "are",
+            "the",
+            "number",
+            "of",
+            "concerts",
+            "that",
+            "occurred",
+            "in",
+            "the",
+            "stadium",
+            "with",
+            "the",
+            "largest",
+            "capacity",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                0,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            18,
+                            false
+                        ],
+                        null
+                    ],
+                    {
+                        "from": {
+                            "table_units": [
+                                [
+                                    "table_unit",
+                                    0
+                                ]
+                            ],
+                            "conds": []
+                        },
+                        "select": [
+                            false,
+                            [
+                                [
+                                    0,
+                                    [
+                                        0,
+                                        [
+                                            0,
+                                            1,
+                                            false
+                                        ],
+                                        null
+                                    ]
+                                ]
+                            ]
+                        ],
+                        "where": [],
+                        "groupBy": [],
+                        "having": [],
+                        "orderBy": [
+                            "desc",
+                            [
+                                [
+                                    0,
+                                    [
+                                        0,
+                                        4,
+                                        false
+                                    ],
+                                    null
+                                ]
+                            ]
+                        ],
+                        "limit": 1,
+                        "intersect": null,
+                        "union": null,
+                        "except": null
+                    },
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "orchestra",
+        "query": "SELECT count(*) FROM conductor",
+        "query_toks": [
+            "SELECT",
+            "count",
+            "(",
+            "*",
+            ")",
+            "FROM",
+            "conductor"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "*",
+            ")",
+            "from",
+            "conductor"
+        ],
+        "question": "How many conductors are there?",
+        "question_toks": [
+            "How",
+            "many",
+            "conductors",
+            "are",
+            "there",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                0,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "orchestra",
+        "query": "SELECT count(*) FROM conductor",
+        "query_toks": [
+            "SELECT",
+            "count",
+            "(",
+            "*",
+            ")",
+            "FROM",
+            "conductor"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "*",
+            ")",
+            "from",
+            "conductor"
+        ],
+        "question": "Count the number of conductors.",
+        "question_toks": [
+            "Count",
+            "the",
+            "number",
+            "of",
+            "conductors",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                0,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "orchestra",
+        "query": "SELECT avg(Attendance) FROM SHOW",
+        "query_toks": [
+            "SELECT",
+            "avg",
+            "(",
+            "Attendance",
+            ")",
+            "FROM",
+            "SHOW"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "avg",
+            "(",
+            "attendance",
+            ")",
+            "from",
+            "show"
+        ],
+        "question": "What is the average attendance of shows?",
+        "question_toks": [
+            "What",
+            "is",
+            "the",
+            "average",
+            "attendance",
+            "of",
+            "shows",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        3
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        5,
+                        [
+                            0,
+                            [
+                                0,
+                                23,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "orchestra",
+        "query": "SELECT avg(Attendance) FROM SHOW",
+        "query_toks": [
+            "SELECT",
+            "avg",
+            "(",
+            "Attendance",
+            ")",
+            "FROM",
+            "SHOW"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "avg",
+            "(",
+            "attendance",
+            ")",
+            "from",
+            "show"
+        ],
+        "question": "Return the average attendance across all shows.",
+        "question_toks": [
+            "Return",
+            "the",
+            "average",
+            "attendance",
+            "across",
+            "all",
+            "shows",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        3
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        5,
+                        [
+                            0,
+                            [
+                                0,
+                                23,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "orchestra",
+        "query": "SELECT max(SHARE) ,  min(SHARE) FROM performance WHERE TYPE != \"Live final\"",
+        "query_toks": [
+            "SELECT",
+            "max",
+            "(",
+            "SHARE",
+            ")",
+            ",",
+            "min",
+            "(",
+            "SHARE",
+            ")",
+            "FROM",
+            "performance",
+            "WHERE",
+            "TYPE",
+            "!",
+            "=",
+            "``",
+            "Live",
+            "final",
+            "''"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "max",
+            "(",
+            "share",
+            ")",
+            ",",
+            "min",
+            "(",
+            "share",
+            ")",
+            "from",
+            "performance",
+            "where",
+            "type",
+            "!",
+            "=",
+            "value"
+        ],
+        "question": "What are the maximum and minimum share of performances whose type is not \"Live final\".",
+        "question_toks": [
+            "What",
+            "are",
+            "the",
+            "maximum",
+            "and",
+            "minimum",
+            "share",
+            "of",
+            "performances",
+            "whose",
+            "type",
+            "is",
+            "not",
+            "``",
+            "Live",
+            "final",
+            "''",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        1,
+                        [
+                            0,
+                            [
+                                0,
+                                18,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                18,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    7,
+                    [
+                        0,
+                        [
+                            0,
+                            14,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Live final\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "orchestra",
+        "query": "SELECT max(SHARE) ,  min(SHARE) FROM performance WHERE TYPE != \"Live final\"",
+        "query_toks": [
+            "SELECT",
+            "max",
+            "(",
+            "SHARE",
+            ")",
+            ",",
+            "min",
+            "(",
+            "SHARE",
+            ")",
+            "FROM",
+            "performance",
+            "WHERE",
+            "TYPE",
+            "!",
+            "=",
+            "``",
+            "Live",
+            "final",
+            "''"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "max",
+            "(",
+            "share",
+            ")",
+            ",",
+            "min",
+            "(",
+            "share",
+            ")",
+            "from",
+            "performance",
+            "where",
+            "type",
+            "!",
+            "=",
+            "value"
+        ],
+        "question": "Return the maximum and minimum shares for performances that do not have the type \"Live final\".",
+        "question_toks": [
+            "Return",
+            "the",
+            "maximum",
+            "and",
+            "minimum",
+            "shares",
+            "for",
+            "performances",
+            "that",
+            "do",
+            "not",
+            "have",
+            "the",
+            "type",
+            "``",
+            "Live",
+            "final",
+            "''",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        1,
+                        [
+                            0,
+                            [
+                                0,
+                                18,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                18,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    7,
+                    [
+                        0,
+                        [
+                            0,
+                            14,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Live final\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "orchestra",
+        "query": "SELECT count(DISTINCT Nationality) FROM conductor",
+        "query_toks": [
+            "SELECT",
+            "count",
+            "(",
+            "DISTINCT",
+            "Nationality",
+            ")",
+            "FROM",
+            "conductor"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "distinct",
+            "nationality",
+            ")",
+            "from",
+            "conductor"
+        ],
+        "question": "How many different nationalities do conductors have?",
+        "question_toks": [
+            "How",
+            "many",
+            "different",
+            "nationalities",
+            "do",
+            "conductors",
+            "have",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                4,
+                                true
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "orchestra",
+        "query": "SELECT count(DISTINCT Nationality) FROM conductor",
+        "query_toks": [
+            "SELECT",
+            "count",
+            "(",
+            "DISTINCT",
+            "Nationality",
+            ")",
+            "FROM",
+            "conductor"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "distinct",
+            "nationality",
+            ")",
+            "from",
+            "conductor"
+        ],
+        "question": "Count the number of different nationalities of conductors.",
+        "question_toks": [
+            "Count",
+            "the",
+            "number",
+            "of",
+            "different",
+            "nationalities",
+            "of",
+            "conductors",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                4,
+                                true
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "orchestra",
+        "query": "SELECT T1.Name FROM conductor AS T1 JOIN orchestra AS T2 ON T1.Conductor_ID  =  T2.Conductor_ID GROUP BY T2.Conductor_ID ORDER BY COUNT(*) DESC LIMIT 1",
+        "query_toks": [
+            "SELECT",
+            "T1.Name",
+            "FROM",
+            "conductor",
+            "AS",
+            "T1",
+            "JOIN",
+            "orchestra",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Conductor_ID",
+            "=",
+            "T2.Conductor_ID",
+            "GROUP",
+            "BY",
+            "T2.Conductor_ID",
+            "ORDER",
+            "BY",
+            "COUNT",
+            "(",
+            "*",
+            ")",
+            "DESC",
+            "LIMIT",
+            "1"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "t1",
+            ".",
+            "name",
+            "from",
+            "conductor",
+            "as",
+            "t1",
+            "join",
+            "orchestra",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "conductor_id",
+            "=",
+            "t2",
+            ".",
+            "conductor_id",
+            "group",
+            "by",
+            "t2",
+            ".",
+            "conductor_id",
+            "order",
+            "by",
+            "count",
+            "(",
+            "*",
+            ")",
+            "desc",
+            "limit",
+            "value"
+        ],
+        "question": "Show the name of the conductor that has conducted the most number of orchestras.",
+        "question_toks": [
+            "Show",
+            "the",
+            "name",
+            "of",
+            "the",
+            "conductor",
+            "that",
+            "has",
+            "conducted",
+            "the",
+            "most",
+            "number",
+            "of",
+            "orchestras",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ],
+                    [
+                        "table_unit",
+                        1
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                1,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            8,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                2,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [
+                [
+                    0,
+                    8,
+                    false
+                ]
+            ],
+            "having": [],
+            "orderBy": [
+                "desc",
+                [
+                    [
+                        0,
+                        [
+                            3,
+                            0,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            ],
+            "limit": 1,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "orchestra",
+        "query": "SELECT T1.Name FROM conductor AS T1 JOIN orchestra AS T2 ON T1.Conductor_ID  =  T2.Conductor_ID GROUP BY T2.Conductor_ID ORDER BY COUNT(*) DESC LIMIT 1",
+        "query_toks": [
+            "SELECT",
+            "T1.Name",
+            "FROM",
+            "conductor",
+            "AS",
+            "T1",
+            "JOIN",
+            "orchestra",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Conductor_ID",
+            "=",
+            "T2.Conductor_ID",
+            "GROUP",
+            "BY",
+            "T2.Conductor_ID",
+            "ORDER",
+            "BY",
+            "COUNT",
+            "(",
+            "*",
+            ")",
+            "DESC",
+            "LIMIT",
+            "1"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "t1",
+            ".",
+            "name",
+            "from",
+            "conductor",
+            "as",
+            "t1",
+            "join",
+            "orchestra",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "conductor_id",
+            "=",
+            "t2",
+            ".",
+            "conductor_id",
+            "group",
+            "by",
+            "t2",
+            ".",
+            "conductor_id",
+            "order",
+            "by",
+            "count",
+            "(",
+            "*",
+            ")",
+            "desc",
+            "limit",
+            "value"
+        ],
+        "question": "What is the name of the conductor who has conducted the most orchestras?",
+        "question_toks": [
+            "What",
+            "is",
+            "the",
+            "name",
+            "of",
+            "the",
+            "conductor",
+            "who",
+            "has",
+            "conducted",
+            "the",
+            "most",
+            "orchestras",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ],
+                    [
+                        "table_unit",
+                        1
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                1,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            8,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                2,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [
+                [
+                    0,
+                    8,
+                    false
+                ]
+            ],
+            "having": [],
+            "orderBy": [
+                "desc",
+                [
+                    [
+                        0,
+                        [
+                            3,
+                            0,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            ],
+            "limit": 1,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "singer",
+        "query": "SELECT Name FROM singer WHERE Citizenship != \"France\"",
+        "query_toks": [
+            "SELECT",
+            "Name",
+            "FROM",
+            "singer",
+            "WHERE",
+            "Citizenship",
+            "!",
+            "=",
+            "``",
+            "France",
+            "''"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "name",
+            "from",
+            "singer",
+            "where",
+            "citizenship",
+            "!",
+            "=",
+            "value"
+        ],
+        "question": "List the name of singers whose citizenship is not \"France\".",
+        "question_toks": [
+            "List",
+            "the",
+            "name",
+            "of",
+            "singers",
+            "whose",
+            "citizenship",
+            "is",
+            "not",
+            "``",
+            "France",
+            "''",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                2,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    7,
+                    [
+                        0,
+                        [
+                            0,
+                            5,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"France\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "singer",
+        "query": "SELECT Name FROM singer WHERE Citizenship != \"France\"",
+        "query_toks": [
+            "SELECT",
+            "Name",
+            "FROM",
+            "singer",
+            "WHERE",
+            "Citizenship",
+            "!",
+            "=",
+            "``",
+            "France",
+            "''"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "name",
+            "from",
+            "singer",
+            "where",
+            "citizenship",
+            "!",
+            "=",
+            "value"
+        ],
+        "question": "What are the names of the singers who are not French citizens?",
+        "question_toks": [
+            "What",
+            "are",
+            "the",
+            "names",
+            "of",
+            "the",
+            "singers",
+            "who",
+            "are",
+            "not",
+            "French",
+            "citizens",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                2,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    7,
+                    [
+                        0,
+                        [
+                            0,
+                            5,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"France\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "singer",
+        "query": "SELECT Name FROM singer ORDER BY Net_Worth_Millions DESC LIMIT 1",
+        "query_toks": [
+            "SELECT",
+            "Name",
+            "FROM",
+            "singer",
+            "ORDER",
+            "BY",
+            "Net_Worth_Millions",
+            "DESC",
+            "LIMIT",
+            "1"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "name",
+            "from",
+            "singer",
+            "order",
+            "by",
+            "net_worth_millions",
+            "desc",
+            "limit",
+            "value"
+        ],
+        "question": "What is the name of the singer with the largest net worth?",
+        "question_toks": [
+            "What",
+            "is",
+            "the",
+            "name",
+            "of",
+            "the",
+            "singer",
+            "with",
+            "the",
+            "largest",
+            "net",
+            "worth",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                2,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [
+                "desc",
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            4,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            ],
+            "limit": 1,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "singer",
+        "query": "SELECT Name FROM singer ORDER BY Net_Worth_Millions DESC LIMIT 1",
+        "query_toks": [
+            "SELECT",
+            "Name",
+            "FROM",
+            "singer",
+            "ORDER",
+            "BY",
+            "Net_Worth_Millions",
+            "DESC",
+            "LIMIT",
+            "1"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "name",
+            "from",
+            "singer",
+            "order",
+            "by",
+            "net_worth_millions",
+            "desc",
+            "limit",
+            "value"
+        ],
+        "question": "What is the name of the singer who is worth the most?",
+        "question_toks": [
+            "What",
+            "is",
+            "the",
+            "name",
+            "of",
+            "the",
+            "singer",
+            "who",
+            "is",
+            "worth",
+            "the",
+            "most",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                2,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [
+                "desc",
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            4,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            ],
+            "limit": 1,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "singer",
+        "query": "select citizenship from singer group by citizenship order by count(*) desc limit 1",
+        "query_toks": [
+            "select",
+            "citizenship",
+            "from",
+            "singer",
+            "group",
+            "by",
+            "citizenship",
+            "order",
+            "by",
+            "count",
+            "(",
+            "*",
+            ")",
+            "desc",
+            "limit",
+            "1"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "citizenship",
+            "from",
+            "singer",
+            "group",
+            "by",
+            "citizenship",
+            "order",
+            "by",
+            "count",
+            "(",
+            "*",
+            ")",
+            "desc",
+            "limit",
+            "value"
+        ],
+        "question": "What is the most common singer citizenship ?",
+        "question_toks": [
+            "What",
+            "is",
+            "the",
+            "most",
+            "common",
+            "singer",
+            "citizenship",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                5,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [
+                [
+                    0,
+                    5,
+                    false
+                ]
+            ],
+            "having": [],
+            "orderBy": [
+                "desc",
+                [
+                    [
+                        0,
+                        [
+                            3,
+                            0,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            ],
+            "limit": 1,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "singer",
+        "query": "SELECT Citizenship ,  max(Net_Worth_Millions) FROM singer GROUP BY Citizenship",
+        "query_toks": [
+            "SELECT",
+            "Citizenship",
+            ",",
+            "max",
+            "(",
+            "Net_Worth_Millions",
+            ")",
+            "FROM",
+            "singer",
+            "GROUP",
+            "BY",
+            "Citizenship"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "citizenship",
+            ",",
+            "max",
+            "(",
+            "net_worth_millions",
+            ")",
+            "from",
+            "singer",
+            "group",
+            "by",
+            "citizenship"
+        ],
+        "question": "Show different citizenships and the maximum net worth of singers of each citizenship.",
+        "question_toks": [
+            "Show",
+            "different",
+            "citizenships",
+            "and",
+            "the",
+            "maximum",
+            "net",
+            "worth",
+            "of",
+            "singers",
+            "of",
+            "each",
+            "citizenship",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                5,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        1,
+                        [
+                            0,
+                            [
+                                0,
+                                4,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [
+                [
+                    0,
+                    5,
+                    false
+                ]
+            ],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "singer",
+        "query": "SELECT Citizenship ,  max(Net_Worth_Millions) FROM singer GROUP BY Citizenship",
+        "query_toks": [
+            "SELECT",
+            "Citizenship",
+            ",",
+            "max",
+            "(",
+            "Net_Worth_Millions",
+            ")",
+            "FROM",
+            "singer",
+            "GROUP",
+            "BY",
+            "Citizenship"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "citizenship",
+            ",",
+            "max",
+            "(",
+            "net_worth_millions",
+            ")",
+            "from",
+            "singer",
+            "group",
+            "by",
+            "citizenship"
+        ],
+        "question": "For each citizenship, what is the maximum net worth?",
+        "question_toks": [
+            "For",
+            "each",
+            "citizenship",
+            ",",
+            "what",
+            "is",
+            "the",
+            "maximum",
+            "net",
+            "worth",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                5,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        1,
+                        [
+                            0,
+                            [
+                                0,
+                                4,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [
+                [
+                    0,
+                    5,
+                    false
+                ]
+            ],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "singer",
+        "query": "SELECT DISTINCT T1.Name FROM singer AS T1 JOIN song AS T2 ON T1.Singer_ID  =  T2.Singer_ID WHERE T2.Sales  >  300000",
+        "query_toks": [
+            "SELECT",
+            "DISTINCT",
+            "T1.Name",
+            "FROM",
+            "singer",
+            "AS",
+            "T1",
+            "JOIN",
+            "song",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Singer_ID",
+            "=",
+            "T2.Singer_ID",
+            "WHERE",
+            "T2.Sales",
+            ">",
+            "300000"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "distinct",
+            "t1",
+            ".",
+            "name",
+            "from",
+            "singer",
+            "as",
+            "t1",
+            "join",
+            "song",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "singer_id",
+            "=",
+            "t2",
+            ".",
+            "singer_id",
+            "where",
+            "t2",
+            ".",
+            "sales",
+            ">",
+            "value"
+        ],
+        "question": "Show distinct names of singers that have songs with sales more than 300000.",
+        "question_toks": [
+            "Show",
+            "distinct",
+            "names",
+            "of",
+            "singers",
+            "that",
+            "have",
+            "songs",
+            "with",
+            "sales",
+            "more",
+            "than",
+            "300000",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ],
+                    [
+                        "table_unit",
+                        1
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                1,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            8,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                true,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                2,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    3,
+                    [
+                        0,
+                        [
+                            0,
+                            9,
+                            false
+                        ],
+                        null
+                    ],
+                    300000.0,
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "singer",
+        "query": "SELECT DISTINCT T1.Name FROM singer AS T1 JOIN song AS T2 ON T1.Singer_ID  =  T2.Singer_ID WHERE T2.Sales  >  300000",
+        "query_toks": [
+            "SELECT",
+            "DISTINCT",
+            "T1.Name",
+            "FROM",
+            "singer",
+            "AS",
+            "T1",
+            "JOIN",
+            "song",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Singer_ID",
+            "=",
+            "T2.Singer_ID",
+            "WHERE",
+            "T2.Sales",
+            ">",
+            "300000"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "distinct",
+            "t1",
+            ".",
+            "name",
+            "from",
+            "singer",
+            "as",
+            "t1",
+            "join",
+            "song",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "singer_id",
+            "=",
+            "t2",
+            ".",
+            "singer_id",
+            "where",
+            "t2",
+            ".",
+            "sales",
+            ">",
+            "value"
+        ],
+        "question": "what are the different names of the singers that have sales more than 300000?",
+        "question_toks": [
+            "what",
+            "are",
+            "the",
+            "different",
+            "names",
+            "of",
+            "the",
+            "singers",
+            "that",
+            "have",
+            "sales",
+            "more",
+            "than",
+            "300000",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ],
+                    [
+                        "table_unit",
+                        1
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                1,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            8,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                true,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                2,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    3,
+                    [
+                        0,
+                        [
+                            0,
+                            9,
+                            false
+                        ],
+                        null
+                    ],
+                    300000.0,
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    }
+]

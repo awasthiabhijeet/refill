@@ -1,0 +1,234 @@
+[
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT T1.address_id , T1.line_1 , T1.line_2 FROM Addresses AS T1 JOIN Students AS T2 ON T1.address_id = T2.current_address_id GROUP BY T1.address_id ORDER BY count( * ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "course_teach",
+        "query": "SELECT Age , Hometown FROM teacher"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT count( * ) FROM Courses"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT grade , count( * ) FROM Highschooler GROUP BY grade"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT student_id , count( * ) FROM Likes GROUP BY student_id"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT T2.name FROM Likes AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id GROUP BY T1.student_id ORDER BY count( * ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "course_teach",
+        "query": "SELECT T3.Name FROM course_arrange AS T1 JOIN course AS T2 ON T1.Course_ID = T2.Course_ID JOIN teacher AS T3 ON T1.Teacher_ID = T3.Teacher_ID WHERE T2.Course = 'Sports'"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT count( * ) FROM Departments AS T1 JOIN Degree_Programs AS T2 ON T1.department_id = T2.department_id WHERE T1.department_name = 'economics'"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT T2.name , count( * ) FROM Likes AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id GROUP BY T1.student_id"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT count( * ) FROM Transcripts"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "select T2.department_name , T1.department_id from degree_programs as T1 join departments as T2 on T1.department_id = T2.department_id group by T1.department_id order by count( * ) desc limit 1"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT semester_name FROM Semesters WHERE semester_id NOT IN ( SELECT semester_id FROM Student_Enrolment )"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT other_student_details FROM Students ORDER BY other_student_details DESC"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT grade FROM Highschooler WHERE name = 'Brittany'"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT count( * ) FROM Highschooler"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT T2.transcript_date , T1.transcript_id FROM Transcript_Contents AS T1 JOIN Transcripts AS T2 ON T1.transcript_id = T2.transcript_id GROUP BY T1.transcript_id HAVING count( * ) >= 2"
+    },
+    {
+        "db_id": "course_teach",
+        "query": "select name from teacher where hometown != 'Farnworth Municipal Borough'"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT T2.name , count( * ) FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id GROUP BY T1.student_id"
+    },
+    {
+        "db_id": "course_teach",
+        "query": "SELECT Name FROM teacher WHERE Teacher_id NOT IN ( SELECT Teacher_id FROM course_arrange )"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT T1.course_name , T1.course_id FROM Courses AS T1 JOIN Sections AS T2 ON T1.course_id = T2.course_id GROUP BY T1.course_id HAVING count( * ) <= 3"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT T2.transcript_date , T1.transcript_id FROM Transcript_Contents AS T1 JOIN Transcripts AS T2 ON T1.transcript_id = T2.transcript_id GROUP BY T1.transcript_id ORDER BY count( * ) ASC LIMIT 1"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT grade FROM Highschooler GROUP BY grade ORDER BY count( * ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT T2.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id INTERSECT SELECT T2.name FROM Likes AS T1 JOIN Highschooler AS T2 ON T1.liked_id = T2.id"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT T1.student_id , T1.first_name , T1.middle_name , T1.last_name , count( * ) , T1.student_id FROM Students AS T1 JOIN Student_Enrolment AS T2 ON T1.student_id = T2.student_id GROUP BY T1.student_id ORDER BY count( * ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "course_teach",
+        "query": "SELECT Hometown FROM teacher GROUP BY Hometown ORDER BY COUNT( * ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT T2.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id WHERE T2.grade > 6 GROUP BY T1.student_id HAVING count( * ) >= 3"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT count( * ) FROM Likes AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id WHERE T2.name = 'Tiffany'"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT section_name FROM Sections ORDER BY section_name DESC"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT transcript_date FROM Transcripts ORDER BY transcript_date DESC LIMIT 1"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT T2.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id GROUP BY T1.student_id ORDER BY count( * ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT DISTINCT T2.semester_id FROM Degree_Programs AS T1 JOIN Student_Enrolment AS T2 ON T1.degree_program_id = T2.degree_program_id WHERE degree_summary_name = 'PHD' INTERSECT SELECT DISTINCT T2.semester_id FROM Degree_Programs AS T1 JOIN Student_Enrolment AS T2 ON T1.degree_program_id = T2.degree_program_id WHERE degree_summary_name = 'PHD'"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT count( * ) FROM Highschooler WHERE grade = 10 OR grade = 11"
+    },
+    {
+        "db_id": "course_teach",
+        "query": "SELECT T3.Name , T2.Course FROM course_arrange AS T1 JOIN course AS T2 ON T1.Course_ID = T2.Course_ID JOIN teacher AS T3 ON T1.Teacher_ID = T3.Teacher_ID"
+    },
+    {
+        "db_id": "course_teach",
+        "query": "SELECT count( * ) FROM teacher"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "select T1.first_name from students as T1 join addresses as T2 on T1.permanent_address_id = T2.address_id where T2.country = 'Gibraltar' or T1.cell_mobile_number = '5073658405'"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT avg( grade ) FROM Highschooler WHERE id IN ( SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id )"
+    },
+    {
+        "db_id": "course_teach",
+        "query": "SELECT Name FROM teacher WHERE Age = 31 OR Age = 32"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT T1.semester_name , T1.semester_id FROM Semesters AS T1 JOIN Student_Enrolment AS T2 ON T1.semester_id = T2.semester_id GROUP BY T1.semester_id ORDER BY count( * ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT student_id , count( * ) FROM Friend GROUP BY student_id"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT name FROM Highschooler EXCEPT SELECT T2.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT first_name , middle_name , last_name FROM Students ORDER BY date_first_registered ASC LIMIT 1"
+    },
+    {
+        "db_id": "course_teach",
+        "query": "SELECT Hometown , COUNT( * ) FROM teacher GROUP BY Hometown"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT T1.degree_summary_name FROM Degree_Programs AS T1 JOIN Student_Enrolment AS T2 ON T1.degree_program_id = T2.degree_program_id GROUP BY T1.degree_summary_name ORDER BY count( * ) DESC LIMIT 1"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT student_id FROM Friend INTERSECT SELECT liked_id FROM Likes"
+    },
+    {
+        "db_id": "course_teach",
+        "query": "SELECT Hometown FROM teacher GROUP BY Hometown HAVING COUNT( * ) >= 3"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT line_1 , line_2 FROM addresses"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT min( grade ) FROM Highschooler WHERE id NOT IN ( SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id )"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT T1.first_name , T1.middle_name , T1.last_name , T1.student_id FROM Students AS T1 JOIN Student_Enrolment AS T2 ON T1.student_id = T2.student_id GROUP BY T1.student_id HAVING count( * ) = 3"
+    },
+    {
+        "db_id": "course_teach",
+        "query": "SELECT T2.Name FROM course_arrange AS T1 JOIN teacher AS T2 ON T1.Teacher_ID = T2.Teacher_ID GROUP BY T2.Name HAVING COUNT( * ) >= 2"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT zip_postcode FROM Addresses WHERE city = 'Lake Careyberg'"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT department_description FROM Departments WHERE department_name LIKE '%computer%'"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT name FROM Highschooler WHERE grade = 11"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT count( DISTINCT department_id ) FROM Degree_Programs"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT section_name , section_description FROM Sections"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT section_description FROM Sections WHERE section_name = 'a'"
+    },
+    {
+        "db_id": "network_1",
+        "query": "SELECT T3.name FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id = T2.id JOIN Highschooler AS T3 ON T1.friend_id = T3.id WHERE T2.name = 'Brittany'"
+    },
+    {
+        "db_id": "course_teach",
+        "query": "SELECT T2.Name , COUNT( * ) FROM course_arrange AS T1 JOIN teacher AS T2 ON T1.Teacher_ID = T2.Teacher_ID GROUP BY T2.Name"
+    },
+    {
+        "db_id": "student_transcripts_tracking",
+        "query": "SELECT transcript_date , other_details FROM Transcripts ORDER BY transcript_date ASC LIMIT 1"
+    }
+]

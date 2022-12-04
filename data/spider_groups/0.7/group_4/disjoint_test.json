@@ -1,0 +1,5752 @@
+[
+    {
+        "db_id": "world_1",
+        "query": "SELECT count(*) FROM country WHERE GovernmentForm  =  \"Republic\"",
+        "query_toks": [
+            "SELECT",
+            "count",
+            "(",
+            "*",
+            ")",
+            "FROM",
+            "country",
+            "WHERE",
+            "GovernmentForm",
+            "=",
+            "``",
+            "Republic",
+            "''"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "*",
+            ")",
+            "from",
+            "country",
+            "where",
+            "governmentform",
+            "=",
+            "value"
+        ],
+        "question": "How many countries have a republic as their form of government?",
+        "question_toks": [
+            "How",
+            "many",
+            "countries",
+            "have",
+            "a",
+            "republic",
+            "as",
+            "their",
+            "form",
+            "of",
+            "government",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                0,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            19,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Republic\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT count(*) FROM country WHERE GovernmentForm  =  \"Republic\"",
+        "query_toks": [
+            "SELECT",
+            "count",
+            "(",
+            "*",
+            ")",
+            "FROM",
+            "country",
+            "WHERE",
+            "GovernmentForm",
+            "=",
+            "``",
+            "Republic",
+            "''"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "*",
+            ")",
+            "from",
+            "country",
+            "where",
+            "governmentform",
+            "=",
+            "value"
+        ],
+        "question": "How many countries have governments that are republics?",
+        "question_toks": [
+            "How",
+            "many",
+            "countries",
+            "have",
+            "governments",
+            "that",
+            "are",
+            "republics",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                0,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            19,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Republic\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT sum(SurfaceArea) FROM country WHERE Region  =  \"Caribbean\"",
+        "query_toks": [
+            "SELECT",
+            "sum",
+            "(",
+            "SurfaceArea",
+            ")",
+            "FROM",
+            "country",
+            "WHERE",
+            "Region",
+            "=",
+            "``",
+            "Caribbean",
+            "''"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "sum",
+            "(",
+            "surfacearea",
+            ")",
+            "from",
+            "country",
+            "where",
+            "region",
+            "=",
+            "value"
+        ],
+        "question": "What is the total surface area of the countries in the Caribbean region?",
+        "question_toks": [
+            "What",
+            "is",
+            "the",
+            "total",
+            "surface",
+            "area",
+            "of",
+            "the",
+            "countries",
+            "in",
+            "the",
+            "Caribbean",
+            "region",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        4,
+                        [
+                            0,
+                            [
+                                0,
+                                12,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            11,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Caribbean\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT sum(SurfaceArea) FROM country WHERE Region  =  \"Caribbean\"",
+        "query_toks": [
+            "SELECT",
+            "sum",
+            "(",
+            "SurfaceArea",
+            ")",
+            "FROM",
+            "country",
+            "WHERE",
+            "Region",
+            "=",
+            "``",
+            "Caribbean",
+            "''"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "sum",
+            "(",
+            "surfacearea",
+            ")",
+            "from",
+            "country",
+            "where",
+            "region",
+            "=",
+            "value"
+        ],
+        "question": "How much surface area do the countires in the Carribean cover together?",
+        "question_toks": [
+            "How",
+            "much",
+            "surface",
+            "area",
+            "do",
+            "the",
+            "countires",
+            "in",
+            "the",
+            "Carribean",
+            "cover",
+            "together",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        4,
+                        [
+                            0,
+                            [
+                                0,
+                                12,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            11,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Caribbean\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T1.Name  =  \"Aruba\" ORDER BY Percentage DESC LIMIT 1",
+        "query_toks": [
+            "SELECT",
+            "T2.Language",
+            "FROM",
+            "country",
+            "AS",
+            "T1",
+            "JOIN",
+            "countrylanguage",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Code",
+            "=",
+            "T2.CountryCode",
+            "WHERE",
+            "T1.Name",
+            "=",
+            "``",
+            "Aruba",
+            "''",
+            "ORDER",
+            "BY",
+            "Percentage",
+            "DESC",
+            "LIMIT",
+            "1"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "t2",
+            ".",
+            "language",
+            "from",
+            "country",
+            "as",
+            "t1",
+            "join",
+            "countrylanguage",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "code",
+            "=",
+            "t2",
+            ".",
+            "countrycode",
+            "where",
+            "t1",
+            ".",
+            "name",
+            "=",
+            "value",
+            "order",
+            "by",
+            "percentage",
+            "desc",
+            "limit",
+            "value"
+        ],
+        "question": "Which language is the most popular in Aruba?",
+        "question_toks": [
+            "Which",
+            "language",
+            "is",
+            "the",
+            "most",
+            "popular",
+            "in",
+            "Aruba",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ],
+                    [
+                        "table_unit",
+                        3
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                8,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            23,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                24,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            9,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Aruba\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [
+                "desc",
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            26,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            ],
+            "limit": 1,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT T2.Language FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T1.Name  =  \"Aruba\" ORDER BY Percentage DESC LIMIT 1",
+        "query_toks": [
+            "SELECT",
+            "T2.Language",
+            "FROM",
+            "country",
+            "AS",
+            "T1",
+            "JOIN",
+            "countrylanguage",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Code",
+            "=",
+            "T2.CountryCode",
+            "WHERE",
+            "T1.Name",
+            "=",
+            "``",
+            "Aruba",
+            "''",
+            "ORDER",
+            "BY",
+            "Percentage",
+            "DESC",
+            "LIMIT",
+            "1"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "t2",
+            ".",
+            "language",
+            "from",
+            "country",
+            "as",
+            "t1",
+            "join",
+            "countrylanguage",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "code",
+            "=",
+            "t2",
+            ".",
+            "countrycode",
+            "where",
+            "t1",
+            ".",
+            "name",
+            "=",
+            "value",
+            "order",
+            "by",
+            "percentage",
+            "desc",
+            "limit",
+            "value"
+        ],
+        "question": "What language is predominantly spoken in Aruba?",
+        "question_toks": [
+            "What",
+            "language",
+            "is",
+            "predominantly",
+            "spoken",
+            "in",
+            "Aruba",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ],
+                    [
+                        "table_unit",
+                        3
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                8,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            23,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                24,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            9,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Aruba\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [
+                "desc",
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            26,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            ],
+            "limit": 1,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Name FROM country WHERE Continent  =  \"Asia\" ORDER BY LifeExpectancy LIMIT 1",
+        "query_toks": [
+            "SELECT",
+            "Name",
+            "FROM",
+            "country",
+            "WHERE",
+            "Continent",
+            "=",
+            "``",
+            "Asia",
+            "''",
+            "ORDER",
+            "BY",
+            "LifeExpectancy",
+            "LIMIT",
+            "1"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "name",
+            "from",
+            "country",
+            "where",
+            "continent",
+            "=",
+            "value",
+            "order",
+            "by",
+            "lifeexpectancy",
+            "limit",
+            "value"
+        ],
+        "question": "What is the name of country that has the shortest life expectancy in Asia?",
+        "question_toks": [
+            "What",
+            "is",
+            "the",
+            "name",
+            "of",
+            "country",
+            "that",
+            "has",
+            "the",
+            "shortest",
+            "life",
+            "expectancy",
+            "in",
+            "Asia",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                9,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            10,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Asia\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [
+                "asc",
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            15,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            ],
+            "limit": 1,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Name FROM country WHERE Continent  =  \"Asia\" ORDER BY LifeExpectancy LIMIT 1",
+        "query_toks": [
+            "SELECT",
+            "Name",
+            "FROM",
+            "country",
+            "WHERE",
+            "Continent",
+            "=",
+            "``",
+            "Asia",
+            "''",
+            "ORDER",
+            "BY",
+            "LifeExpectancy",
+            "LIMIT",
+            "1"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "name",
+            "from",
+            "country",
+            "where",
+            "continent",
+            "=",
+            "value",
+            "order",
+            "by",
+            "lifeexpectancy",
+            "limit",
+            "value"
+        ],
+        "question": "Give the name of the country in Asia with the lowest life expectancy.",
+        "question_toks": [
+            "Give",
+            "the",
+            "name",
+            "of",
+            "the",
+            "country",
+            "in",
+            "Asia",
+            "with",
+            "the",
+            "lowest",
+            "life",
+            "expectancy",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                9,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            10,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Asia\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [
+                "asc",
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            15,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            ],
+            "limit": 1,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT sum(Population) ,  max(GNP) FROM country WHERE Continent  =  \"Asia\"",
+        "query_toks": [
+            "SELECT",
+            "sum",
+            "(",
+            "Population",
+            ")",
+            ",",
+            "max",
+            "(",
+            "GNP",
+            ")",
+            "FROM",
+            "country",
+            "WHERE",
+            "Continent",
+            "=",
+            "``",
+            "Asia",
+            "''"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "sum",
+            "(",
+            "population",
+            ")",
+            ",",
+            "max",
+            "(",
+            "gnp",
+            ")",
+            "from",
+            "country",
+            "where",
+            "continent",
+            "=",
+            "value"
+        ],
+        "question": "What is the total population and maximum GNP in Asia?",
+        "question_toks": [
+            "What",
+            "is",
+            "the",
+            "total",
+            "population",
+            "and",
+            "maximum",
+            "GNP",
+            "in",
+            "Asia",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        4,
+                        [
+                            0,
+                            [
+                                0,
+                                14,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        1,
+                        [
+                            0,
+                            [
+                                0,
+                                16,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            10,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Asia\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT sum(Population) ,  max(GNP) FROM country WHERE Continent  =  \"Asia\"",
+        "query_toks": [
+            "SELECT",
+            "sum",
+            "(",
+            "Population",
+            ")",
+            ",",
+            "max",
+            "(",
+            "GNP",
+            ")",
+            "FROM",
+            "country",
+            "WHERE",
+            "Continent",
+            "=",
+            "``",
+            "Asia",
+            "''"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "sum",
+            "(",
+            "population",
+            ")",
+            ",",
+            "max",
+            "(",
+            "gnp",
+            ")",
+            "from",
+            "country",
+            "where",
+            "continent",
+            "=",
+            "value"
+        ],
+        "question": "How many people live in Asia, and what is the largest GNP among them?",
+        "question_toks": [
+            "How",
+            "many",
+            "people",
+            "live",
+            "in",
+            "Asia",
+            ",",
+            "and",
+            "what",
+            "is",
+            "the",
+            "largest",
+            "GNP",
+            "among",
+            "them",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        4,
+                        [
+                            0,
+                            [
+                                0,
+                                14,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        1,
+                        [
+                            0,
+                            [
+                                0,
+                                16,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            10,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Asia\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT COUNT(T2.Language) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T1.Name  =  \"Aruba\"",
+        "query_toks": [
+            "SELECT",
+            "COUNT",
+            "(",
+            "T2.Language",
+            ")",
+            "FROM",
+            "country",
+            "AS",
+            "T1",
+            "JOIN",
+            "countrylanguage",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Code",
+            "=",
+            "T2.CountryCode",
+            "WHERE",
+            "T1.Name",
+            "=",
+            "``",
+            "Aruba",
+            "''"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "t2",
+            ".",
+            "language",
+            ")",
+            "from",
+            "country",
+            "as",
+            "t1",
+            "join",
+            "countrylanguage",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "code",
+            "=",
+            "t2",
+            ".",
+            "countrycode",
+            "where",
+            "t1",
+            ".",
+            "name",
+            "=",
+            "value"
+        ],
+        "question": "What is the total number of languages used in Aruba?",
+        "question_toks": [
+            "What",
+            "is",
+            "the",
+            "total",
+            "number",
+            "of",
+            "languages",
+            "used",
+            "in",
+            "Aruba",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ],
+                    [
+                        "table_unit",
+                        3
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                8,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            23,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                24,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            9,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Aruba\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT COUNT(T2.Language) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T1.Name  =  \"Aruba\"",
+        "query_toks": [
+            "SELECT",
+            "COUNT",
+            "(",
+            "T2.Language",
+            ")",
+            "FROM",
+            "country",
+            "AS",
+            "T1",
+            "JOIN",
+            "countrylanguage",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Code",
+            "=",
+            "T2.CountryCode",
+            "WHERE",
+            "T1.Name",
+            "=",
+            "``",
+            "Aruba",
+            "''"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "t2",
+            ".",
+            "language",
+            ")",
+            "from",
+            "country",
+            "as",
+            "t1",
+            "join",
+            "countrylanguage",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "code",
+            "=",
+            "t2",
+            ".",
+            "countrycode",
+            "where",
+            "t1",
+            ".",
+            "name",
+            "=",
+            "value"
+        ],
+        "question": "How many languages are spoken in Aruba?",
+        "question_toks": [
+            "How",
+            "many",
+            "languages",
+            "are",
+            "spoken",
+            "in",
+            "Aruba",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ],
+                    [
+                        "table_unit",
+                        3
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                8,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            23,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                24,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            9,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Aruba\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT COUNT(*) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T1.Name  =  \"Afghanistan\" AND IsOfficial  =  \"T\"",
+        "query_toks": [
+            "SELECT",
+            "COUNT",
+            "(",
+            "*",
+            ")",
+            "FROM",
+            "country",
+            "AS",
+            "T1",
+            "JOIN",
+            "countrylanguage",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Code",
+            "=",
+            "T2.CountryCode",
+            "WHERE",
+            "T1.Name",
+            "=",
+            "``",
+            "Afghanistan",
+            "''",
+            "AND",
+            "IsOfficial",
+            "=",
+            "``",
+            "T",
+            "''"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "*",
+            ")",
+            "from",
+            "country",
+            "as",
+            "t1",
+            "join",
+            "countrylanguage",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "code",
+            "=",
+            "t2",
+            ".",
+            "countrycode",
+            "where",
+            "t1",
+            ".",
+            "name",
+            "=",
+            "value",
+            "and",
+            "isofficial",
+            "=",
+            "value"
+        ],
+        "question": "How many official languages does Afghanistan have?",
+        "question_toks": [
+            "How",
+            "many",
+            "official",
+            "languages",
+            "does",
+            "Afghanistan",
+            "have",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ],
+                    [
+                        "table_unit",
+                        3
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                8,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            23,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                0,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            9,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Afghanistan\"",
+                    null
+                ],
+                "and",
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            25,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"T\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT COUNT(*) FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T1.Name  =  \"Afghanistan\" AND IsOfficial  =  \"T\"",
+        "query_toks": [
+            "SELECT",
+            "COUNT",
+            "(",
+            "*",
+            ")",
+            "FROM",
+            "country",
+            "AS",
+            "T1",
+            "JOIN",
+            "countrylanguage",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Code",
+            "=",
+            "T2.CountryCode",
+            "WHERE",
+            "T1.Name",
+            "=",
+            "``",
+            "Afghanistan",
+            "''",
+            "AND",
+            "IsOfficial",
+            "=",
+            "``",
+            "T",
+            "''"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "*",
+            ")",
+            "from",
+            "country",
+            "as",
+            "t1",
+            "join",
+            "countrylanguage",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "code",
+            "=",
+            "t2",
+            ".",
+            "countrycode",
+            "where",
+            "t1",
+            ".",
+            "name",
+            "=",
+            "value",
+            "and",
+            "isofficial",
+            "=",
+            "value"
+        ],
+        "question": "How many official languages are spoken in Afghanistan?",
+        "question_toks": [
+            "How",
+            "many",
+            "official",
+            "languages",
+            "are",
+            "spoken",
+            "in",
+            "Afghanistan",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ],
+                    [
+                        "table_unit",
+                        3
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                8,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            23,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                0,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            9,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Afghanistan\"",
+                    null
+                ],
+                "and",
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            25,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"T\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT COUNT(*) FROM (SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T2.Language  =  \"English\" INTERSECT SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T2.Language  =  \"Dutch\")",
+        "query_toks": [
+            "SELECT",
+            "COUNT",
+            "(",
+            "*",
+            ")",
+            "FROM",
+            "(",
+            "SELECT",
+            "T1.Name",
+            "FROM",
+            "country",
+            "AS",
+            "T1",
+            "JOIN",
+            "countrylanguage",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Code",
+            "=",
+            "T2.CountryCode",
+            "WHERE",
+            "T2.Language",
+            "=",
+            "``",
+            "English",
+            "''",
+            "INTERSECT",
+            "SELECT",
+            "T1.Name",
+            "FROM",
+            "country",
+            "AS",
+            "T1",
+            "JOIN",
+            "countrylanguage",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Code",
+            "=",
+            "T2.CountryCode",
+            "WHERE",
+            "T2.Language",
+            "=",
+            "``",
+            "Dutch",
+            "''",
+            ")"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "*",
+            ")",
+            "from",
+            "(",
+            "select",
+            "t1",
+            ".",
+            "name",
+            "from",
+            "country",
+            "as",
+            "t1",
+            "join",
+            "countrylanguage",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "code",
+            "=",
+            "t2",
+            ".",
+            "countrycode",
+            "where",
+            "t2",
+            ".",
+            "language",
+            "=",
+            "value",
+            "intersect",
+            "select",
+            "t1",
+            ".",
+            "name",
+            "from",
+            "country",
+            "as",
+            "t1",
+            "join",
+            "countrylanguage",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "code",
+            "=",
+            "t2",
+            ".",
+            "countrycode",
+            "where",
+            "t2",
+            ".",
+            "language",
+            "=",
+            "value",
+            ")"
+        ],
+        "question": "How many countries speak both English and Dutch?",
+        "question_toks": [
+            "How",
+            "many",
+            "countries",
+            "speak",
+            "both",
+            "English",
+            "and",
+            "Dutch",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "sql",
+                        {
+                            "from": {
+                                "table_units": [
+                                    [
+                                        "table_unit",
+                                        2
+                                    ],
+                                    [
+                                        "table_unit",
+                                        3
+                                    ]
+                                ],
+                                "conds": [
+                                    [
+                                        false,
+                                        2,
+                                        [
+                                            0,
+                                            [
+                                                0,
+                                                8,
+                                                false
+                                            ],
+                                            null
+                                        ],
+                                        [
+                                            0,
+                                            23,
+                                            false
+                                        ],
+                                        null
+                                    ]
+                                ]
+                            },
+                            "select": [
+                                false,
+                                [
+                                    [
+                                        0,
+                                        [
+                                            0,
+                                            [
+                                                0,
+                                                9,
+                                                false
+                                            ],
+                                            null
+                                        ]
+                                    ]
+                                ]
+                            ],
+                            "where": [
+                                [
+                                    false,
+                                    2,
+                                    [
+                                        0,
+                                        [
+                                            0,
+                                            24,
+                                            false
+                                        ],
+                                        null
+                                    ],
+                                    "\"English\"",
+                                    null
+                                ]
+                            ],
+                            "groupBy": [],
+                            "having": [],
+                            "orderBy": [],
+                            "limit": null,
+                            "intersect": {
+                                "from": {
+                                    "table_units": [
+                                        [
+                                            "table_unit",
+                                            2
+                                        ],
+                                        [
+                                            "table_unit",
+                                            3
+                                        ]
+                                    ],
+                                    "conds": [
+                                        [
+                                            false,
+                                            2,
+                                            [
+                                                0,
+                                                [
+                                                    0,
+                                                    8,
+                                                    false
+                                                ],
+                                                null
+                                            ],
+                                            [
+                                                0,
+                                                23,
+                                                false
+                                            ],
+                                            null
+                                        ]
+                                    ]
+                                },
+                                "select": [
+                                    false,
+                                    [
+                                        [
+                                            0,
+                                            [
+                                                0,
+                                                [
+                                                    0,
+                                                    9,
+                                                    false
+                                                ],
+                                                null
+                                            ]
+                                        ]
+                                    ]
+                                ],
+                                "where": [
+                                    [
+                                        false,
+                                        2,
+                                        [
+                                            0,
+                                            [
+                                                0,
+                                                24,
+                                                false
+                                            ],
+                                            null
+                                        ],
+                                        "\"Dutch\"",
+                                        null
+                                    ]
+                                ],
+                                "groupBy": [],
+                                "having": [],
+                                "orderBy": [],
+                                "limit": null,
+                                "intersect": null,
+                                "union": null,
+                                "except": null
+                            },
+                            "union": null,
+                            "except": null
+                        }
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                0,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT COUNT(*) FROM (SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T2.Language  =  \"English\" INTERSECT SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T2.Language  =  \"Dutch\")",
+        "query_toks": [
+            "SELECT",
+            "COUNT",
+            "(",
+            "*",
+            ")",
+            "FROM",
+            "(",
+            "SELECT",
+            "T1.Name",
+            "FROM",
+            "country",
+            "AS",
+            "T1",
+            "JOIN",
+            "countrylanguage",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Code",
+            "=",
+            "T2.CountryCode",
+            "WHERE",
+            "T2.Language",
+            "=",
+            "``",
+            "English",
+            "''",
+            "INTERSECT",
+            "SELECT",
+            "T1.Name",
+            "FROM",
+            "country",
+            "AS",
+            "T1",
+            "JOIN",
+            "countrylanguage",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Code",
+            "=",
+            "T2.CountryCode",
+            "WHERE",
+            "T2.Language",
+            "=",
+            "``",
+            "Dutch",
+            "''",
+            ")"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "*",
+            ")",
+            "from",
+            "(",
+            "select",
+            "t1",
+            ".",
+            "name",
+            "from",
+            "country",
+            "as",
+            "t1",
+            "join",
+            "countrylanguage",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "code",
+            "=",
+            "t2",
+            ".",
+            "countrycode",
+            "where",
+            "t2",
+            ".",
+            "language",
+            "=",
+            "value",
+            "intersect",
+            "select",
+            "t1",
+            ".",
+            "name",
+            "from",
+            "country",
+            "as",
+            "t1",
+            "join",
+            "countrylanguage",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "code",
+            "=",
+            "t2",
+            ".",
+            "countrycode",
+            "where",
+            "t2",
+            ".",
+            "language",
+            "=",
+            "value",
+            ")"
+        ],
+        "question": "What is the number of nations that use English and Dutch?",
+        "question_toks": [
+            "What",
+            "is",
+            "the",
+            "number",
+            "of",
+            "nations",
+            "that",
+            "use",
+            "English",
+            "and",
+            "Dutch",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "sql",
+                        {
+                            "from": {
+                                "table_units": [
+                                    [
+                                        "table_unit",
+                                        2
+                                    ],
+                                    [
+                                        "table_unit",
+                                        3
+                                    ]
+                                ],
+                                "conds": [
+                                    [
+                                        false,
+                                        2,
+                                        [
+                                            0,
+                                            [
+                                                0,
+                                                8,
+                                                false
+                                            ],
+                                            null
+                                        ],
+                                        [
+                                            0,
+                                            23,
+                                            false
+                                        ],
+                                        null
+                                    ]
+                                ]
+                            },
+                            "select": [
+                                false,
+                                [
+                                    [
+                                        0,
+                                        [
+                                            0,
+                                            [
+                                                0,
+                                                9,
+                                                false
+                                            ],
+                                            null
+                                        ]
+                                    ]
+                                ]
+                            ],
+                            "where": [
+                                [
+                                    false,
+                                    2,
+                                    [
+                                        0,
+                                        [
+                                            0,
+                                            24,
+                                            false
+                                        ],
+                                        null
+                                    ],
+                                    "\"English\"",
+                                    null
+                                ]
+                            ],
+                            "groupBy": [],
+                            "having": [],
+                            "orderBy": [],
+                            "limit": null,
+                            "intersect": {
+                                "from": {
+                                    "table_units": [
+                                        [
+                                            "table_unit",
+                                            2
+                                        ],
+                                        [
+                                            "table_unit",
+                                            3
+                                        ]
+                                    ],
+                                    "conds": [
+                                        [
+                                            false,
+                                            2,
+                                            [
+                                                0,
+                                                [
+                                                    0,
+                                                    8,
+                                                    false
+                                                ],
+                                                null
+                                            ],
+                                            [
+                                                0,
+                                                23,
+                                                false
+                                            ],
+                                            null
+                                        ]
+                                    ]
+                                },
+                                "select": [
+                                    false,
+                                    [
+                                        [
+                                            0,
+                                            [
+                                                0,
+                                                [
+                                                    0,
+                                                    9,
+                                                    false
+                                                ],
+                                                null
+                                            ]
+                                        ]
+                                    ]
+                                ],
+                                "where": [
+                                    [
+                                        false,
+                                        2,
+                                        [
+                                            0,
+                                            [
+                                                0,
+                                                24,
+                                                false
+                                            ],
+                                            null
+                                        ],
+                                        "\"Dutch\"",
+                                        null
+                                    ]
+                                ],
+                                "groupBy": [],
+                                "having": [],
+                                "orderBy": [],
+                                "limit": null,
+                                "intersect": null,
+                                "union": null,
+                                "except": null
+                            },
+                            "union": null,
+                            "except": null
+                        }
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                0,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T2.Language  =  \"English\" AND T2.IsOfficial  =  \"T\" INTERSECT SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T2.Language  =  \"French\" AND T2.IsOfficial  =  \"T\"",
+        "query_toks": [
+            "SELECT",
+            "T1.Name",
+            "FROM",
+            "country",
+            "AS",
+            "T1",
+            "JOIN",
+            "countrylanguage",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Code",
+            "=",
+            "T2.CountryCode",
+            "WHERE",
+            "T2.Language",
+            "=",
+            "``",
+            "English",
+            "''",
+            "AND",
+            "T2.IsOfficial",
+            "=",
+            "``",
+            "T",
+            "''",
+            "INTERSECT",
+            "SELECT",
+            "T1.Name",
+            "FROM",
+            "country",
+            "AS",
+            "T1",
+            "JOIN",
+            "countrylanguage",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Code",
+            "=",
+            "T2.CountryCode",
+            "WHERE",
+            "T2.Language",
+            "=",
+            "``",
+            "French",
+            "''",
+            "AND",
+            "T2.IsOfficial",
+            "=",
+            "``",
+            "T",
+            "''"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "t1",
+            ".",
+            "name",
+            "from",
+            "country",
+            "as",
+            "t1",
+            "join",
+            "countrylanguage",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "code",
+            "=",
+            "t2",
+            ".",
+            "countrycode",
+            "where",
+            "t2",
+            ".",
+            "language",
+            "=",
+            "value",
+            "and",
+            "t2",
+            ".",
+            "isofficial",
+            "=",
+            "value",
+            "intersect",
+            "select",
+            "t1",
+            ".",
+            "name",
+            "from",
+            "country",
+            "as",
+            "t1",
+            "join",
+            "countrylanguage",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "code",
+            "=",
+            "t2",
+            ".",
+            "countrycode",
+            "where",
+            "t2",
+            ".",
+            "language",
+            "=",
+            "value",
+            "and",
+            "t2",
+            ".",
+            "isofficial",
+            "=",
+            "value"
+        ],
+        "question": "What are the names of nations where both English and French are official languages?",
+        "question_toks": [
+            "What",
+            "are",
+            "the",
+            "names",
+            "of",
+            "nations",
+            "where",
+            "both",
+            "English",
+            "and",
+            "French",
+            "are",
+            "official",
+            "languages",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ],
+                    [
+                        "table_unit",
+                        3
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                8,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            23,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                9,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            24,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"English\"",
+                    null
+                ],
+                "and",
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            25,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"T\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": {
+                "from": {
+                    "table_units": [
+                        [
+                            "table_unit",
+                            2
+                        ],
+                        [
+                            "table_unit",
+                            3
+                        ]
+                    ],
+                    "conds": [
+                        [
+                            false,
+                            2,
+                            [
+                                0,
+                                [
+                                    0,
+                                    8,
+                                    false
+                                ],
+                                null
+                            ],
+                            [
+                                0,
+                                23,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                },
+                "select": [
+                    false,
+                    [
+                        [
+                            0,
+                            [
+                                0,
+                                [
+                                    0,
+                                    9,
+                                    false
+                                ],
+                                null
+                            ]
+                        ]
+                    ]
+                ],
+                "where": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                24,
+                                false
+                            ],
+                            null
+                        ],
+                        "\"French\"",
+                        null
+                    ],
+                    "and",
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                25,
+                                false
+                            ],
+                            null
+                        ],
+                        "\"T\"",
+                        null
+                    ]
+                ],
+                "groupBy": [],
+                "having": [],
+                "orderBy": [],
+                "limit": null,
+                "intersect": null,
+                "union": null,
+                "except": null
+            },
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T2.Language  =  \"English\" AND T2.IsOfficial  =  \"T\" INTERSECT SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T2.Language  =  \"French\" AND T2.IsOfficial  =  \"T\"",
+        "query_toks": [
+            "SELECT",
+            "T1.Name",
+            "FROM",
+            "country",
+            "AS",
+            "T1",
+            "JOIN",
+            "countrylanguage",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Code",
+            "=",
+            "T2.CountryCode",
+            "WHERE",
+            "T2.Language",
+            "=",
+            "``",
+            "English",
+            "''",
+            "AND",
+            "T2.IsOfficial",
+            "=",
+            "``",
+            "T",
+            "''",
+            "INTERSECT",
+            "SELECT",
+            "T1.Name",
+            "FROM",
+            "country",
+            "AS",
+            "T1",
+            "JOIN",
+            "countrylanguage",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Code",
+            "=",
+            "T2.CountryCode",
+            "WHERE",
+            "T2.Language",
+            "=",
+            "``",
+            "French",
+            "''",
+            "AND",
+            "T2.IsOfficial",
+            "=",
+            "``",
+            "T",
+            "''"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "t1",
+            ".",
+            "name",
+            "from",
+            "country",
+            "as",
+            "t1",
+            "join",
+            "countrylanguage",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "code",
+            "=",
+            "t2",
+            ".",
+            "countrycode",
+            "where",
+            "t2",
+            ".",
+            "language",
+            "=",
+            "value",
+            "and",
+            "t2",
+            ".",
+            "isofficial",
+            "=",
+            "value",
+            "intersect",
+            "select",
+            "t1",
+            ".",
+            "name",
+            "from",
+            "country",
+            "as",
+            "t1",
+            "join",
+            "countrylanguage",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "code",
+            "=",
+            "t2",
+            ".",
+            "countrycode",
+            "where",
+            "t2",
+            ".",
+            "language",
+            "=",
+            "value",
+            "and",
+            "t2",
+            ".",
+            "isofficial",
+            "=",
+            "value"
+        ],
+        "question": "Give the names of countries with English and French as official languages.",
+        "question_toks": [
+            "Give",
+            "the",
+            "names",
+            "of",
+            "countries",
+            "with",
+            "English",
+            "and",
+            "French",
+            "as",
+            "official",
+            "languages",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ],
+                    [
+                        "table_unit",
+                        3
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                8,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            23,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                9,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            24,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"English\"",
+                    null
+                ],
+                "and",
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            25,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"T\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": {
+                "from": {
+                    "table_units": [
+                        [
+                            "table_unit",
+                            2
+                        ],
+                        [
+                            "table_unit",
+                            3
+                        ]
+                    ],
+                    "conds": [
+                        [
+                            false,
+                            2,
+                            [
+                                0,
+                                [
+                                    0,
+                                    8,
+                                    false
+                                ],
+                                null
+                            ],
+                            [
+                                0,
+                                23,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                },
+                "select": [
+                    false,
+                    [
+                        [
+                            0,
+                            [
+                                0,
+                                [
+                                    0,
+                                    9,
+                                    false
+                                ],
+                                null
+                            ]
+                        ]
+                    ]
+                ],
+                "where": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                24,
+                                false
+                            ],
+                            null
+                        ],
+                        "\"French\"",
+                        null
+                    ],
+                    "and",
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                25,
+                                false
+                            ],
+                            null
+                        ],
+                        "\"T\"",
+                        null
+                    ]
+                ],
+                "groupBy": [],
+                "having": [],
+                "orderBy": [],
+                "limit": null,
+                "intersect": null,
+                "union": null,
+                "except": null
+            },
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Name FROM country WHERE Continent  =  \"Africa\"  AND population  <  (SELECT max(population) FROM country WHERE Continent  =  \"Asia\")",
+        "query_toks": [
+            "SELECT",
+            "Name",
+            "FROM",
+            "country",
+            "WHERE",
+            "Continent",
+            "=",
+            "``",
+            "Africa",
+            "''",
+            "AND",
+            "population",
+            "<",
+            "(",
+            "SELECT",
+            "max",
+            "(",
+            "population",
+            ")",
+            "FROM",
+            "country",
+            "WHERE",
+            "Continent",
+            "=",
+            "``",
+            "Asia",
+            "''",
+            ")"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "name",
+            "from",
+            "country",
+            "where",
+            "continent",
+            "=",
+            "value",
+            "and",
+            "population",
+            "<",
+            "(",
+            "select",
+            "max",
+            "(",
+            "population",
+            ")",
+            "from",
+            "country",
+            "where",
+            "continent",
+            "=",
+            "value",
+            ")"
+        ],
+        "question": "What are the African countries that have a  population less than any country in Asia?",
+        "question_toks": [
+            "What",
+            "are",
+            "the",
+            "African",
+            "countries",
+            "that",
+            "have",
+            "a",
+            "population",
+            "less",
+            "than",
+            "any",
+            "country",
+            "in",
+            "Asia",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                9,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            10,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Africa\"",
+                    null
+                ],
+                "and",
+                [
+                    false,
+                    4,
+                    [
+                        0,
+                        [
+                            0,
+                            14,
+                            false
+                        ],
+                        null
+                    ],
+                    {
+                        "from": {
+                            "table_units": [
+                                [
+                                    "table_unit",
+                                    2
+                                ]
+                            ],
+                            "conds": []
+                        },
+                        "select": [
+                            false,
+                            [
+                                [
+                                    1,
+                                    [
+                                        0,
+                                        [
+                                            0,
+                                            14,
+                                            false
+                                        ],
+                                        null
+                                    ]
+                                ]
+                            ]
+                        ],
+                        "where": [
+                            [
+                                false,
+                                2,
+                                [
+                                    0,
+                                    [
+                                        0,
+                                        10,
+                                        false
+                                    ],
+                                    null
+                                ],
+                                "\"Asia\"",
+                                null
+                            ]
+                        ],
+                        "groupBy": [],
+                        "having": [],
+                        "orderBy": [],
+                        "limit": null,
+                        "intersect": null,
+                        "union": null,
+                        "except": null
+                    },
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT Name FROM country WHERE Continent  =  \"Asia\"  AND population  >  (SELECT max(population) FROM country WHERE Continent  =  \"Africa\")",
+        "query_toks": [
+            "SELECT",
+            "Name",
+            "FROM",
+            "country",
+            "WHERE",
+            "Continent",
+            "=",
+            "``",
+            "Asia",
+            "''",
+            "AND",
+            "population",
+            ">",
+            "(",
+            "SELECT",
+            "max",
+            "(",
+            "population",
+            ")",
+            "FROM",
+            "country",
+            "WHERE",
+            "Continent",
+            "=",
+            "``",
+            "Africa",
+            "''",
+            ")"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "name",
+            "from",
+            "country",
+            "where",
+            "continent",
+            "=",
+            "value",
+            "and",
+            "population",
+            ">",
+            "(",
+            "select",
+            "max",
+            "(",
+            "population",
+            ")",
+            "from",
+            "country",
+            "where",
+            "continent",
+            "=",
+            "value",
+            ")"
+        ],
+        "question": "Which Asian countries have a population that is larger than any country in Africa?",
+        "question_toks": [
+            "Which",
+            "Asian",
+            "countries",
+            "have",
+            "a",
+            "population",
+            "that",
+            "is",
+            "larger",
+            "than",
+            "any",
+            "country",
+            "in",
+            "Africa",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                9,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            10,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Asia\"",
+                    null
+                ],
+                "and",
+                [
+                    false,
+                    3,
+                    [
+                        0,
+                        [
+                            0,
+                            14,
+                            false
+                        ],
+                        null
+                    ],
+                    {
+                        "from": {
+                            "table_units": [
+                                [
+                                    "table_unit",
+                                    2
+                                ]
+                            ],
+                            "conds": []
+                        },
+                        "select": [
+                            false,
+                            [
+                                [
+                                    1,
+                                    [
+                                        0,
+                                        [
+                                            0,
+                                            14,
+                                            false
+                                        ],
+                                        null
+                                    ]
+                                ]
+                            ]
+                        ],
+                        "where": [
+                            [
+                                false,
+                                2,
+                                [
+                                    0,
+                                    [
+                                        0,
+                                        10,
+                                        false
+                                    ],
+                                    null
+                                ],
+                                "\"Africa\"",
+                                null
+                            ]
+                        ],
+                        "groupBy": [],
+                        "having": [],
+                        "orderBy": [],
+                        "limit": null,
+                        "intersect": null,
+                        "union": null,
+                        "except": null
+                    },
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "select distinct t3.name from country as t1 join countrylanguage as t2 on t1.code  =  t2.countrycode join city as t3 on t1.code  =  t3.countrycode where t2.isofficial  =  't' and t2.language  =  'chinese' and t1.continent  =  \"asia\"",
+        "query_toks": [
+            "select",
+            "distinct",
+            "t3.name",
+            "from",
+            "country",
+            "as",
+            "t1",
+            "join",
+            "countrylanguage",
+            "as",
+            "t2",
+            "on",
+            "t1.code",
+            "=",
+            "t2.countrycode",
+            "join",
+            "city",
+            "as",
+            "t3",
+            "on",
+            "t1.code",
+            "=",
+            "t3.countrycode",
+            "where",
+            "t2.isofficial",
+            "=",
+            "\"t\"",
+            "and",
+            "t2.language",
+            "=",
+            "\"chinese\"",
+            "and",
+            "t1.continent",
+            "=",
+            "\"asia\""
+        ],
+        "query_toks_no_value": [
+            "select",
+            "distinct",
+            "t3",
+            ".",
+            "name",
+            "from",
+            "country",
+            "as",
+            "t1",
+            "join",
+            "countrylanguage",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "code",
+            "=",
+            "t2",
+            ".",
+            "countrycode",
+            "join",
+            "city",
+            "as",
+            "t3",
+            "on",
+            "t1",
+            ".",
+            "code",
+            "=",
+            "t3",
+            ".",
+            "countrycode",
+            "where",
+            "t2",
+            ".",
+            "isofficial",
+            "=",
+            "value",
+            "and",
+            "t2",
+            ".",
+            "language",
+            "=",
+            "value",
+            "and",
+            "t1",
+            ".",
+            "continent",
+            "=",
+            "value"
+        ],
+        "question": "Which unique cities are in Asian countries where Chinese is the official language ?",
+        "question_toks": [
+            "Which",
+            "unique",
+            "cities",
+            "are",
+            "in",
+            "Asian",
+            "countries",
+            "where",
+            "Chinese",
+            "is",
+            "the",
+            "official",
+            "language",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ],
+                    [
+                        "table_unit",
+                        3
+                    ],
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                8,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            23,
+                            false
+                        ],
+                        null
+                    ],
+                    "and",
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                8,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            3,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                true,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                2,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            25,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"t\"",
+                    null
+                ],
+                "and",
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            24,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"chinese\"",
+                    null
+                ],
+                "and",
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            10,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"asia\"",
+                    null
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT COUNT(T2.Language) ,  T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode GROUP BY T1.Name HAVING COUNT(*)  >  2",
+        "query_toks": [
+            "SELECT",
+            "COUNT",
+            "(",
+            "T2.Language",
+            ")",
+            ",",
+            "T1.Name",
+            "FROM",
+            "country",
+            "AS",
+            "T1",
+            "JOIN",
+            "countrylanguage",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Code",
+            "=",
+            "T2.CountryCode",
+            "GROUP",
+            "BY",
+            "T1.Name",
+            "HAVING",
+            "COUNT",
+            "(",
+            "*",
+            ")",
+            ">",
+            "2"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "t2",
+            ".",
+            "language",
+            ")",
+            ",",
+            "t1",
+            ".",
+            "name",
+            "from",
+            "country",
+            "as",
+            "t1",
+            "join",
+            "countrylanguage",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "code",
+            "=",
+            "t2",
+            ".",
+            "countrycode",
+            "group",
+            "by",
+            "t1",
+            ".",
+            "name",
+            "having",
+            "count",
+            "(",
+            "*",
+            ")",
+            ">",
+            "value"
+        ],
+        "question": "Return the country name and the numbers of languages spoken for each country that speaks at least 3 languages.",
+        "question_toks": [
+            "Return",
+            "the",
+            "country",
+            "name",
+            "and",
+            "the",
+            "numbers",
+            "of",
+            "languages",
+            "spoken",
+            "for",
+            "each",
+            "country",
+            "that",
+            "speaks",
+            "at",
+            "least",
+            "3",
+            "languages",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ],
+                    [
+                        "table_unit",
+                        3
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                8,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            23,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                24,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                9,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [
+                [
+                    0,
+                    9,
+                    false
+                ]
+            ],
+            "having": [
+                [
+                    false,
+                    3,
+                    [
+                        0,
+                        [
+                            3,
+                            0,
+                            false
+                        ],
+                        null
+                    ],
+                    2.0,
+                    null
+                ]
+            ],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT COUNT(T2.Language) ,  T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode GROUP BY T1.Name HAVING COUNT(*)  >  2",
+        "query_toks": [
+            "SELECT",
+            "COUNT",
+            "(",
+            "T2.Language",
+            ")",
+            ",",
+            "T1.Name",
+            "FROM",
+            "country",
+            "AS",
+            "T1",
+            "JOIN",
+            "countrylanguage",
+            "AS",
+            "T2",
+            "ON",
+            "T1.Code",
+            "=",
+            "T2.CountryCode",
+            "GROUP",
+            "BY",
+            "T1.Name",
+            "HAVING",
+            "COUNT",
+            "(",
+            "*",
+            ")",
+            ">",
+            "2"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "t2",
+            ".",
+            "language",
+            ")",
+            ",",
+            "t1",
+            ".",
+            "name",
+            "from",
+            "country",
+            "as",
+            "t1",
+            "join",
+            "countrylanguage",
+            "as",
+            "t2",
+            "on",
+            "t1",
+            ".",
+            "code",
+            "=",
+            "t2",
+            ".",
+            "countrycode",
+            "group",
+            "by",
+            "t1",
+            ".",
+            "name",
+            "having",
+            "count",
+            "(",
+            "*",
+            ")",
+            ">",
+            "value"
+        ],
+        "question": "What are the names of countries that speak more than 2 languages, as well as how many languages they speak?",
+        "question_toks": [
+            "What",
+            "are",
+            "the",
+            "names",
+            "of",
+            "countries",
+            "that",
+            "speak",
+            "more",
+            "than",
+            "2",
+            "languages",
+            ",",
+            "as",
+            "well",
+            "as",
+            "how",
+            "many",
+            "languages",
+            "they",
+            "speak",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ],
+                    [
+                        "table_unit",
+                        3
+                    ]
+                ],
+                "conds": [
+                    [
+                        false,
+                        2,
+                        [
+                            0,
+                            [
+                                0,
+                                8,
+                                false
+                            ],
+                            null
+                        ],
+                        [
+                            0,
+                            23,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                24,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                9,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [
+                [
+                    0,
+                    9,
+                    false
+                ]
+            ],
+            "having": [
+                [
+                    false,
+                    3,
+                    [
+                        0,
+                        [
+                            3,
+                            0,
+                            false
+                        ],
+                        null
+                    ],
+                    2.0,
+                    null
+                ]
+            ],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT count(*) ,  District FROM city WHERE Population  >  (SELECT avg(Population) FROM city) GROUP BY District",
+        "query_toks": [
+            "SELECT",
+            "count",
+            "(",
+            "*",
+            ")",
+            ",",
+            "District",
+            "FROM",
+            "city",
+            "WHERE",
+            "Population",
+            ">",
+            "(",
+            "SELECT",
+            "avg",
+            "(",
+            "Population",
+            ")",
+            "FROM",
+            "city",
+            ")",
+            "GROUP",
+            "BY",
+            "District"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "*",
+            ")",
+            ",",
+            "district",
+            "from",
+            "city",
+            "where",
+            "population",
+            ">",
+            "(",
+            "select",
+            "avg",
+            "(",
+            "population",
+            ")",
+            "from",
+            "city",
+            ")",
+            "group",
+            "by",
+            "district"
+        ],
+        "question": "Find the number of cities in each district whose population is greater than the average population of cities?",
+        "question_toks": [
+            "Find",
+            "the",
+            "number",
+            "of",
+            "cities",
+            "in",
+            "each",
+            "district",
+            "whose",
+            "population",
+            "is",
+            "greater",
+            "than",
+            "the",
+            "average",
+            "population",
+            "of",
+            "cities",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                0,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                4,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    3,
+                    [
+                        0,
+                        [
+                            0,
+                            5,
+                            false
+                        ],
+                        null
+                    ],
+                    {
+                        "from": {
+                            "table_units": [
+                                [
+                                    "table_unit",
+                                    0
+                                ]
+                            ],
+                            "conds": []
+                        },
+                        "select": [
+                            false,
+                            [
+                                [
+                                    5,
+                                    [
+                                        0,
+                                        [
+                                            0,
+                                            5,
+                                            false
+                                        ],
+                                        null
+                                    ]
+                                ]
+                            ]
+                        ],
+                        "where": [],
+                        "groupBy": [],
+                        "having": [],
+                        "orderBy": [],
+                        "limit": null,
+                        "intersect": null,
+                        "union": null,
+                        "except": null
+                    },
+                    null
+                ]
+            ],
+            "groupBy": [
+                [
+                    0,
+                    4,
+                    false
+                ]
+            ],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT count(*) ,  District FROM city WHERE Population  >  (SELECT avg(Population) FROM city) GROUP BY District",
+        "query_toks": [
+            "SELECT",
+            "count",
+            "(",
+            "*",
+            ")",
+            ",",
+            "District",
+            "FROM",
+            "city",
+            "WHERE",
+            "Population",
+            ">",
+            "(",
+            "SELECT",
+            "avg",
+            "(",
+            "Population",
+            ")",
+            "FROM",
+            "city",
+            ")",
+            "GROUP",
+            "BY",
+            "District"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "*",
+            ")",
+            ",",
+            "district",
+            "from",
+            "city",
+            "where",
+            "population",
+            ">",
+            "(",
+            "select",
+            "avg",
+            "(",
+            "population",
+            ")",
+            "from",
+            "city",
+            ")",
+            "group",
+            "by",
+            "district"
+        ],
+        "question": "How many cities in each district have a population that is above the average population across all cities?",
+        "question_toks": [
+            "How",
+            "many",
+            "cities",
+            "in",
+            "each",
+            "district",
+            "have",
+            "a",
+            "population",
+            "that",
+            "is",
+            "above",
+            "the",
+            "average",
+            "population",
+            "across",
+            "all",
+            "cities",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                0,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                4,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    3,
+                    [
+                        0,
+                        [
+                            0,
+                            5,
+                            false
+                        ],
+                        null
+                    ],
+                    {
+                        "from": {
+                            "table_units": [
+                                [
+                                    "table_unit",
+                                    0
+                                ]
+                            ],
+                            "conds": []
+                        },
+                        "select": [
+                            false,
+                            [
+                                [
+                                    5,
+                                    [
+                                        0,
+                                        [
+                                            0,
+                                            5,
+                                            false
+                                        ],
+                                        null
+                                    ]
+                                ]
+                            ]
+                        ],
+                        "where": [],
+                        "groupBy": [],
+                        "having": [],
+                        "orderBy": [],
+                        "limit": null,
+                        "intersect": null,
+                        "union": null,
+                        "except": null
+                    },
+                    null
+                ]
+            ],
+            "groupBy": [
+                [
+                    0,
+                    4,
+                    false
+                ]
+            ],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT sum(Population) ,  GovernmentForm FROM country GROUP BY GovernmentForm HAVING avg(LifeExpectancy)  >  72",
+        "query_toks": [
+            "SELECT",
+            "sum",
+            "(",
+            "Population",
+            ")",
+            ",",
+            "GovernmentForm",
+            "FROM",
+            "country",
+            "GROUP",
+            "BY",
+            "GovernmentForm",
+            "HAVING",
+            "avg",
+            "(",
+            "LifeExpectancy",
+            ")",
+            ">",
+            "72"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "sum",
+            "(",
+            "population",
+            ")",
+            ",",
+            "governmentform",
+            "from",
+            "country",
+            "group",
+            "by",
+            "governmentform",
+            "having",
+            "avg",
+            "(",
+            "lifeexpectancy",
+            ")",
+            ">",
+            "value"
+        ],
+        "question": "Find the government form name and total population for each government form whose average life expectancy is longer than 72.",
+        "question_toks": [
+            "Find",
+            "the",
+            "government",
+            "form",
+            "name",
+            "and",
+            "total",
+            "population",
+            "for",
+            "each",
+            "government",
+            "form",
+            "whose",
+            "average",
+            "life",
+            "expectancy",
+            "is",
+            "longer",
+            "than",
+            "72",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        4,
+                        [
+                            0,
+                            [
+                                0,
+                                14,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                19,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [
+                [
+                    0,
+                    19,
+                    false
+                ]
+            ],
+            "having": [
+                [
+                    false,
+                    3,
+                    [
+                        0,
+                        [
+                            5,
+                            15,
+                            false
+                        ],
+                        null
+                    ],
+                    72.0,
+                    null
+                ]
+            ],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT sum(Population) ,  GovernmentForm FROM country GROUP BY GovernmentForm HAVING avg(LifeExpectancy)  >  72",
+        "query_toks": [
+            "SELECT",
+            "sum",
+            "(",
+            "Population",
+            ")",
+            ",",
+            "GovernmentForm",
+            "FROM",
+            "country",
+            "GROUP",
+            "BY",
+            "GovernmentForm",
+            "HAVING",
+            "avg",
+            "(",
+            "LifeExpectancy",
+            ")",
+            ">",
+            "72"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "sum",
+            "(",
+            "population",
+            ")",
+            ",",
+            "governmentform",
+            "from",
+            "country",
+            "group",
+            "by",
+            "governmentform",
+            "having",
+            "avg",
+            "(",
+            "lifeexpectancy",
+            ")",
+            ">",
+            "value"
+        ],
+        "question": "What are the different government forms and what is the total population of each for government forms that have an average life expectancy greater than 72?",
+        "question_toks": [
+            "What",
+            "are",
+            "the",
+            "different",
+            "government",
+            "forms",
+            "and",
+            "what",
+            "is",
+            "the",
+            "total",
+            "population",
+            "of",
+            "each",
+            "for",
+            "government",
+            "forms",
+            "that",
+            "have",
+            "an",
+            "average",
+            "life",
+            "expectancy",
+            "greater",
+            "than",
+            "72",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        2
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        4,
+                        [
+                            0,
+                            [
+                                0,
+                                14,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                19,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [
+                [
+                    0,
+                    19,
+                    false
+                ]
+            ],
+            "having": [
+                [
+                    false,
+                    3,
+                    [
+                        0,
+                        [
+                            5,
+                            15,
+                            false
+                        ],
+                        null
+                    ],
+                    72.0,
+                    null
+                ]
+            ],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT name FROM city WHERE Population BETWEEN 160000 AND 900000",
+        "query_toks": [
+            "SELECT",
+            "name",
+            "FROM",
+            "city",
+            "WHERE",
+            "Population",
+            "BETWEEN",
+            "160000",
+            "AND",
+            "900000"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "name",
+            "from",
+            "city",
+            "where",
+            "population",
+            "between",
+            "value",
+            "and",
+            "value"
+        ],
+        "question": "What are the cities whose population is between 160000 and 900000?",
+        "question_toks": [
+            "What",
+            "are",
+            "the",
+            "cities",
+            "whose",
+            "population",
+            "is",
+            "between",
+            "160000",
+            "and",
+            "900000",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                2,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    1,
+                    [
+                        0,
+                        [
+                            0,
+                            5,
+                            false
+                        ],
+                        null
+                    ],
+                    160000.0,
+                    900000.0
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "select name from city where population between 160000 and 900000",
+        "query_toks": [
+            "select",
+            "name",
+            "from",
+            "city",
+            "where",
+            "population",
+            "between",
+            "160000",
+            "and",
+            "900000"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "name",
+            "from",
+            "city",
+            "where",
+            "population",
+            "between",
+            "value",
+            "and",
+            "value"
+        ],
+        "question": "Return the names of cities that have a population between 160000 and 900000 .",
+        "question_toks": [
+            "Return",
+            "the",
+            "names",
+            "of",
+            "cities",
+            "that",
+            "have",
+            "a",
+            "population",
+            "between",
+            "160000",
+            "and",
+            "900000",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        0
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                2,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    1,
+                    [
+                        0,
+                        [
+                            0,
+                            5,
+                            false
+                        ],
+                        null
+                    ],
+                    160000.0,
+                    900000.0
+                ]
+            ],
+            "groupBy": [],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT LANGUAGE FROM countrylanguage GROUP BY LANGUAGE ORDER BY count(*) DESC LIMIT 1",
+        "query_toks": [
+            "SELECT",
+            "LANGUAGE",
+            "FROM",
+            "countrylanguage",
+            "GROUP",
+            "BY",
+            "LANGUAGE",
+            "ORDER",
+            "BY",
+            "count",
+            "(",
+            "*",
+            ")",
+            "DESC",
+            "LIMIT",
+            "1"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "language",
+            "from",
+            "countrylanguage",
+            "group",
+            "by",
+            "language",
+            "order",
+            "by",
+            "count",
+            "(",
+            "*",
+            ")",
+            "desc",
+            "limit",
+            "value"
+        ],
+        "question": "Which language is spoken by the largest number of countries?",
+        "question_toks": [
+            "Which",
+            "language",
+            "is",
+            "spoken",
+            "by",
+            "the",
+            "largest",
+            "number",
+            "of",
+            "countries",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        3
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                24,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [
+                [
+                    0,
+                    24,
+                    false
+                ]
+            ],
+            "having": [],
+            "orderBy": [
+                "desc",
+                [
+                    [
+                        0,
+                        [
+                            3,
+                            0,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            ],
+            "limit": 1,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT LANGUAGE FROM countrylanguage GROUP BY LANGUAGE ORDER BY count(*) DESC LIMIT 1",
+        "query_toks": [
+            "SELECT",
+            "LANGUAGE",
+            "FROM",
+            "countrylanguage",
+            "GROUP",
+            "BY",
+            "LANGUAGE",
+            "ORDER",
+            "BY",
+            "count",
+            "(",
+            "*",
+            ")",
+            "DESC",
+            "LIMIT",
+            "1"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "language",
+            "from",
+            "countrylanguage",
+            "group",
+            "by",
+            "language",
+            "order",
+            "by",
+            "count",
+            "(",
+            "*",
+            ")",
+            "desc",
+            "limit",
+            "value"
+        ],
+        "question": "Give the language that is spoken in the most countries.",
+        "question_toks": [
+            "Give",
+            "the",
+            "language",
+            "that",
+            "is",
+            "spoken",
+            "in",
+            "the",
+            "most",
+            "countries",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        3
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                24,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [
+                [
+                    0,
+                    24,
+                    false
+                ]
+            ],
+            "having": [],
+            "orderBy": [
+                "desc",
+                [
+                    [
+                        0,
+                        [
+                            3,
+                            0,
+                            false
+                        ],
+                        null
+                    ]
+                ]
+            ],
+            "limit": 1,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT LANGUAGE ,  CountryCode ,  max(Percentage) FROM countrylanguage GROUP BY CountryCode",
+        "query_toks": [
+            "SELECT",
+            "LANGUAGE",
+            ",",
+            "CountryCode",
+            ",",
+            "max",
+            "(",
+            "Percentage",
+            ")",
+            "FROM",
+            "countrylanguage",
+            "GROUP",
+            "BY",
+            "CountryCode"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "language",
+            ",",
+            "countrycode",
+            ",",
+            "max",
+            "(",
+            "percentage",
+            ")",
+            "from",
+            "countrylanguage",
+            "group",
+            "by",
+            "countrycode"
+        ],
+        "question": "What is the language spoken by the largest percentage of people in each country?",
+        "question_toks": [
+            "What",
+            "is",
+            "the",
+            "language",
+            "spoken",
+            "by",
+            "the",
+            "largest",
+            "percentage",
+            "of",
+            "people",
+            "in",
+            "each",
+            "country",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        3
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                24,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                23,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        1,
+                        [
+                            0,
+                            [
+                                0,
+                                26,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [
+                [
+                    0,
+                    23,
+                    false
+                ]
+            ],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT LANGUAGE ,  CountryCode ,  max(Percentage) FROM countrylanguage GROUP BY CountryCode",
+        "query_toks": [
+            "SELECT",
+            "LANGUAGE",
+            ",",
+            "CountryCode",
+            ",",
+            "max",
+            "(",
+            "Percentage",
+            ")",
+            "FROM",
+            "countrylanguage",
+            "GROUP",
+            "BY",
+            "CountryCode"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "language",
+            ",",
+            "countrycode",
+            ",",
+            "max",
+            "(",
+            "percentage",
+            ")",
+            "from",
+            "countrylanguage",
+            "group",
+            "by",
+            "countrycode"
+        ],
+        "question": "What are the country codes of the different countries, and what are the languages spoken by the greatest percentage of people for each?",
+        "question_toks": [
+            "What",
+            "are",
+            "the",
+            "country",
+            "codes",
+            "of",
+            "the",
+            "different",
+            "countries",
+            ",",
+            "and",
+            "what",
+            "are",
+            "the",
+            "languages",
+            "spoken",
+            "by",
+            "the",
+            "greatest",
+            "percentage",
+            "of",
+            "people",
+            "for",
+            "each",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        3
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                24,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        0,
+                        [
+                            0,
+                            [
+                                0,
+                                23,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        1,
+                        [
+                            0,
+                            [
+                                0,
+                                26,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [],
+            "groupBy": [
+                [
+                    0,
+                    23,
+                    false
+                ]
+            ],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT count(*) ,   max(Percentage) FROM countrylanguage WHERE LANGUAGE  =  \"Spanish\" GROUP BY CountryCode",
+        "query_toks": [
+            "SELECT",
+            "count",
+            "(",
+            "*",
+            ")",
+            ",",
+            "max",
+            "(",
+            "Percentage",
+            ")",
+            "FROM",
+            "countrylanguage",
+            "WHERE",
+            "LANGUAGE",
+            "=",
+            "``",
+            "Spanish",
+            "''",
+            "GROUP",
+            "BY",
+            "CountryCode"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "*",
+            ")",
+            ",",
+            "max",
+            "(",
+            "percentage",
+            ")",
+            "from",
+            "countrylanguage",
+            "where",
+            "language",
+            "=",
+            "value",
+            "group",
+            "by",
+            "countrycode"
+        ],
+        "question": "What is the total number of countries where Spanish is spoken by the largest percentage of people?",
+        "question_toks": [
+            "What",
+            "is",
+            "the",
+            "total",
+            "number",
+            "of",
+            "countries",
+            "where",
+            "Spanish",
+            "is",
+            "spoken",
+            "by",
+            "the",
+            "largest",
+            "percentage",
+            "of",
+            "people",
+            "?"
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        3
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                0,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        1,
+                        [
+                            0,
+                            [
+                                0,
+                                26,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            24,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Spanish\"",
+                    null
+                ]
+            ],
+            "groupBy": [
+                [
+                    0,
+                    23,
+                    false
+                ]
+            ],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    },
+    {
+        "db_id": "world_1",
+        "query": "SELECT count(*) ,   max(Percentage) FROM countrylanguage WHERE LANGUAGE  =  \"Spanish\" GROUP BY CountryCode",
+        "query_toks": [
+            "SELECT",
+            "count",
+            "(",
+            "*",
+            ")",
+            ",",
+            "max",
+            "(",
+            "Percentage",
+            ")",
+            "FROM",
+            "countrylanguage",
+            "WHERE",
+            "LANGUAGE",
+            "=",
+            "``",
+            "Spanish",
+            "''",
+            "GROUP",
+            "BY",
+            "CountryCode"
+        ],
+        "query_toks_no_value": [
+            "select",
+            "count",
+            "(",
+            "*",
+            ")",
+            ",",
+            "max",
+            "(",
+            "percentage",
+            ")",
+            "from",
+            "countrylanguage",
+            "where",
+            "language",
+            "=",
+            "value",
+            "group",
+            "by",
+            "countrycode"
+        ],
+        "question": "Count the number of countries for which Spanish is the predominantly spoken language.",
+        "question_toks": [
+            "Count",
+            "the",
+            "number",
+            "of",
+            "countries",
+            "for",
+            "which",
+            "Spanish",
+            "is",
+            "the",
+            "predominantly",
+            "spoken",
+            "language",
+            "."
+        ],
+        "sql": {
+            "from": {
+                "table_units": [
+                    [
+                        "table_unit",
+                        3
+                    ]
+                ],
+                "conds": []
+            },
+            "select": [
+                false,
+                [
+                    [
+                        3,
+                        [
+                            0,
+                            [
+                                0,
+                                0,
+                                false
+                            ],
+                            null
+                        ]
+                    ],
+                    [
+                        1,
+                        [
+                            0,
+                            [
+                                0,
+                                26,
+                                false
+                            ],
+                            null
+                        ]
+                    ]
+                ]
+            ],
+            "where": [
+                [
+                    false,
+                    2,
+                    [
+                        0,
+                        [
+                            0,
+                            24,
+                            false
+                        ],
+                        null
+                    ],
+                    "\"Spanish\"",
+                    null
+                ]
+            ],
+            "groupBy": [
+                [
+                    0,
+                    23,
+                    false
+                ]
+            ],
+            "having": [],
+            "orderBy": [],
+            "limit": null,
+            "intersect": null,
+            "union": null,
+            "except": null
+        }
+    }
+]
