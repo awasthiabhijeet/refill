@@ -41,4 +41,4 @@ Create a new virtual environment and install the dependencies by running `pip in
 
 # GAZP Pipeline
 
-# L2S Pipeline
+# SNOWBALL Pipeline
