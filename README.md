@@ -20,7 +20,7 @@ Create a new virtual environment and install the dependencies by running `pip in
 
 # ReFill Pipeline
 
-  * Posprocessing: Apply Masking, Convert SQLs into Pseudo-English form, Pre-compute SQL-neighbours for train and val set
+  * Preprocessing: Apply Masking, Convert SQLs into Pseudo-English form, Pre-compute SQL-neighbours for train and val set
     ```
     bash scripts/data/refill_postprocess.sh
     ```
@@ -39,6 +39,39 @@ Create a new virtual environment and install the dependencies by running `pip in
 
 # L2S Pipeline
 
+This pipeline makes use of relative paths. It is recommended to change directory to [`scripts/sql-to-text/`](scripts/sql-to-text) first before running any script
+
+  * Preprocessing + Training: Convert SQLs into L2S encoding and train a Seq2Seq model
+    ```
+    bash train_l2s.sh
+    ```
+  * L2S Inference: Use the trained SQL-to-Text Seq2Seq model to generate text for the given workload
+    ```
+    bash infer_l2s.sh
+    ```
+
 # GAZP Pipeline
 
-# SNOWBALL Pipeline
+This pipeline makes use of relative paths. It is recommended to change directory to [`scripts/sql-to-text/`](scripts/sql-to-text) first before running any script
+
+  * Preprocessing + Training: Convert SQLs into GAZP encoding and train a Seq2Seq model
+    ```
+    bash train_gazp.sh
+    ```
+  * GAZP Inference + Filtering: Use the trained SQL-to-Text Seq2Seq model to generate text for the given workload and use a forward Text-to-SQL parser for cycle consistency based filtering
+    ```
+    bash infer_gazp.sh
+    ```
+
+# SnowBall Pipeline
+
+This pipeline makes use of relative paths. It is recommended to change directory to [`scripts/sql-to-text/`](scripts/sql-to-text) first before running any script
+
+  * Preprocessing + Training: Convert SQLs into SnowBall encoding and train a Seq2Seq model
+    ```
+    bash train_snowball.sh
+    ```
+  * SnowBall Inference: Use the trained SQL-to-Text Seq2Seq model to generate text for the given workload
+    ```
+    bash infer_snowball.sh
+    ```
